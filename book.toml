@@ -1,0 +1,6 @@
+[book]
+authors = ["zeyad rashed"]
+language = "en"
+multilingual = false
+src = "src"
+title = "AirshipCraft Documentation"
