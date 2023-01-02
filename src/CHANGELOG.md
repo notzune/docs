@@ -7,8 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [v0.1.0] - 2023-1-2
 ### Added 
-- Created seperate git repository to hold the documentation.
-  - Cloned repository to server root for better version control.
+- Web
+  - Seperate repositories for better version control via git
+    - Created seperate repo to hold the documentation.
+    - Created seperate repo for homepage
 
 ### Removed
-- Documentation from main web repository, moved to seperate repo
+- Web
+  - Documentation and homepage from main web repository, moved to seperate repo
