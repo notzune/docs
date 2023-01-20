@@ -5,13 +5,36 @@ All notable changes to this project will be documented in this file. This includ
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v0.1.0] - 2023-1-2
+## [v0.1.0] - 2023-1-2 - 2023-1-20
 ### Added 
 - Web
   - Seperate repositories for better version control via git
     - Created seperate repo to hold the documentation.
     - Created seperate repo for homepage
+  - Started work on ``/craftviewer`` and ``/market``
+
+- Discord
+  - In process of creating seperate Discord server exclusively for developmental purposes.
+  - Arya
+    - Creation of seperate repository for Arya's core module for better version controlling
+    - 
+
+- Server
+  - Upgraded server hardware to 6 cores and 16 GB RAM
+  - Set up ``rdiff-backup`` in-order to periodically backup the map
+  - Pruned uneccesary/redundant testing environments
+
+- Map
+  - Began work on "Port Xile" as well as plotting out the starting point for "Bettesville"
+  - "Port Xile"
+    - Market area completed, needs polishing/decorating
+    - Social area half finished, feels empty atm
+    - Main fortress near complete needs interior/rooms
+    - Residential area near complete, needs a few more blocks to fill out space as well as creation of a "high end" district
 
 ### Removed
 - Web
   - Documentation and homepage from main web repository, moved to seperate repo
+
+- Discord
+  - Moved ``core`` module of Arya to seperate repository
