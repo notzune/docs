@@ -32,6 +32,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Main fortress near complete needs interior/rooms
     - Residential area near complete, needs a few more blocks to fill out space as well as creation of a "high end" district
 
+### Changed
+- Docs
+  - Restructuring of the documentation
+  - Creation of user guides
+  - Began writing of the project overview
+
 ### Removed
 - Web
   - Documentation and homepage from main web repository, moved to seperate repo
