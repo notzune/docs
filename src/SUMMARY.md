@@ -25,5 +25,7 @@
   - [Weapons]()
 
 - [Skills](mech/skills.md)
+- [Cults](mech/cults.md)
+- [Nodes](mech/nodes.md)
 
 [Contributions](misc/contributions.md)
