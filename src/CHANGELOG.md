@@ -25,7 +25,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Pruned uneccesary/redundant testing environments
 
 - Map
-  - Began work on "Port Xile" as well as plotting out the starting point for "Bettesville"
+  - Began work on "Port Xile" as well as plotting out the starting point for "Bettesville"   
+  
   - "Port Xile"
     - Market area completed, needs polishing/decorating
     - Social area half finished, feels empty atm
