@@ -85,9 +85,7 @@ Given this, we think of the following as guiding principles:
 And finally, again:
 - **No two people are the same**, so there is no true ‘optimal challenge line’. It is a construct used to understand from measurement when to make hurdles harder or easier based on individual player performance.   
 
-This is one way to deal with player engagement and create addiction. Great games closely adhere to the ‘Optimal Challenge Line’ as created by each player’s skill and use the Octalysis drivers to push players back and forth across the line.
-
-
+This is one way to deal with player engagement and create addiction. Great games closely adhere to the ‘Optimal Challenge Line’ as created by each player’s skill and use the Octalysis drivers to push players back and forth across the line.   
 
 Octalysis is a great breakdown of player motivations by Yu-Kai Chou. We can use the drivers here to motivate high satisfaction and high effort players, as each respond to different things.    
 

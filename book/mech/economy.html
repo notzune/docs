@@ -29,6 +29,7 @@
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/pagetoc.css">
 
     </head>
     <body>
@@ -80,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="../CHANGELOG.html">Changelog</a></li><li class="chapter-item expanded affix "><li class="part-title">Map</li><li class="chapter-item expanded "><a href="../map/maplore.html"><strong aria-hidden="true">1.</strong> Lore</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../map/lore/cities.html"><strong aria-hidden="true">1.1.</strong> City States</a></li></ol></li><li class="chapter-item expanded "><a href="../map/mapoverview.html"><strong aria-hidden="true">2.</strong> Map Overview</a></li><li class="chapter-item expanded affix "><li class="part-title">Mechanics</li><li class="chapter-item expanded "><a href="../mech/economy.html" class="active"><strong aria-hidden="true">3.</strong> Economy</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mech/economy/market.html"><strong aria-hidden="true">3.1.</strong> Market</a></li><li class="chapter-item expanded "><a href="../mech/economy/spreadsheet.html"><strong aria-hidden="true">3.2.</strong> Spreadsheet</a></li><li class="chapter-item expanded "><a href="../mech/economy/resources.html"><strong aria-hidden="true">3.3.</strong> Resources</a></li></ol></li><li class="chapter-item expanded "><a href="../mech/npc.html"><strong aria-hidden="true">4.</strong> NPCs</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Types</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mech/npcs/types/soldier.html"><strong aria-hidden="true">4.1.1.</strong> Soldiers</a></li><li class="chapter-item expanded "><a href="../mech/npcs/types/characters.html"><strong aria-hidden="true">4.1.2.</strong> Characters</a></li><li class="chapter-item expanded "><a href="../mech/npcs/types/merchants.html"><strong aria-hidden="true">4.1.3.</strong> Merchants</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../mech/combat.html"><strong aria-hidden="true">5.</strong> Combat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mech/combat/movecraft.html"><strong aria-hidden="true">5.1.</strong> Movecraft</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.2.</strong> Weapons</div></li></ol></li><li class="chapter-item expanded "><a href="../mech/skills.html"><strong aria-hidden="true">6.</strong> Skills</a></li><li class="chapter-item expanded affix "><a href="../misc/contributions.html">Contributions</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="../CHANGELOG.html">Changelog</a></li><li class="chapter-item expanded affix "><li class="part-title">Map</li><li class="chapter-item expanded "><a href="../map/maplore.html"><strong aria-hidden="true">1.</strong> Lore</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../map/lore/cities.html"><strong aria-hidden="true">1.1.</strong> City States</a></li></ol></li><li class="chapter-item expanded "><a href="../map/mapoverview.html"><strong aria-hidden="true">2.</strong> Map Overview</a></li><li class="chapter-item expanded affix "><li class="part-title">Mechanics</li><li class="chapter-item expanded "><a href="../mech/economy.html" class="active"><strong aria-hidden="true">3.</strong> Economy</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mech/economy/market.html"><strong aria-hidden="true">3.1.</strong> Market</a></li><li class="chapter-item expanded "><a href="../mech/economy/spreadsheet.html"><strong aria-hidden="true">3.2.</strong> Spreadsheet</a></li><li class="chapter-item expanded "><a href="../mech/economy/resources.html"><strong aria-hidden="true">3.3.</strong> Resources</a></li></ol></li><li class="chapter-item expanded "><a href="../mech/npc.html"><strong aria-hidden="true">4.</strong> NPCs</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Types</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mech/npcs/types/soldier.html"><strong aria-hidden="true">4.1.1.</strong> Soldiers</a></li><li class="chapter-item expanded "><a href="../mech/npcs/types/characters.html"><strong aria-hidden="true">4.1.2.</strong> Characters</a></li><li class="chapter-item expanded "><a href="../mech/npcs/types/merchants.html"><strong aria-hidden="true">4.1.3.</strong> Merchants</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../mech/combat.html"><strong aria-hidden="true">5.</strong> Combat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mech/combat/movecraft.html"><strong aria-hidden="true">5.1.</strong> Movecraft</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.2.</strong> Weapons</div></li></ol></li><li class="chapter-item expanded "><a href="../mech/skills.html"><strong aria-hidden="true">6.</strong> Skills</a></li><li class="chapter-item expanded "><a href="../mech/cults.html"><strong aria-hidden="true">7.</strong> Cults</a></li><li class="chapter-item expanded "><a href="../mech/nodes.html"><strong aria-hidden="true">8.</strong> Nodes</a></li><li class="chapter-item expanded affix "><a href="../misc/contributions.html">Contributions</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -141,7 +142,19 @@
 
                 <div id="content" class="content">
                     <main>
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
                         <h1 id="economy"><a class="header" href="#economy">Economy</a></h1>
+<h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
+<p>The economy is a crucial point of the project/server. It builds the core of the overall gameplay design as it gives players a purpose. Building a good economic system within the game is a crucial step in setting the foundation for creating a positive feedback loop in the player's experience.</p>
+<p>A good economy allows players to trade and exchange resources in order to progress or improve their gameplay experience. Our economy system aims to include elements such as supply and demand, inflation, and player-driven marketplaces. A good economy system should allow for player choice and strategy, as well as creating opportunities for players to specialize in certain in-game activities. A balanced economy can prevent exploitation and provide fair opportunities for players to acquire resources.</p>
+<p>A balanced economy can prevent exploitation by ensuring that there is a fair distribution of resources and opportunities for all players. This can be achieved through a variety of methods, such as setting limits on the amount of resources that can be gathered or traded, or adjusting the costs of goods and services based on supply and demand; both methods we plan to implement.</p>
+<p>Additionally, a balanced economy can prevent players from cornering the market on a particular resource, or charging exorbitant prices for goods or services, by placing caps on the prices that can be charged or by adjusting the availability of resources based on player actions.</p>
+<p>If the economy is well designed enough, it will be easier for players as well as the moderators to be able to detect suspicious activity that could be caused by player exploitation and put a stop to it a lot easier.</p>
 
                     </main>
 
@@ -205,6 +218,7 @@
         <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
+        <script src="../theme/pagetoc.js"></script>
 
 
     </body>

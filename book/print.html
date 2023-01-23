@@ -30,6 +30,7 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/pagetoc.css">
 
     </head>
     <body>
@@ -81,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="CHANGELOG.html">Changelog</a></li><li class="chapter-item expanded affix "><li class="part-title">Map</li><li class="chapter-item expanded "><a href="map/maplore.html"><strong aria-hidden="true">1.</strong> Lore</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="map/lore/cities.html"><strong aria-hidden="true">1.1.</strong> City States</a></li></ol></li><li class="chapter-item expanded "><a href="map/mapoverview.html"><strong aria-hidden="true">2.</strong> Map Overview</a></li><li class="chapter-item expanded affix "><li class="part-title">Mechanics</li><li class="chapter-item expanded "><a href="mech/economy.html"><strong aria-hidden="true">3.</strong> Economy</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="mech/economy/market.html"><strong aria-hidden="true">3.1.</strong> Market</a></li><li class="chapter-item expanded "><a href="mech/economy/spreadsheet.html"><strong aria-hidden="true">3.2.</strong> Spreadsheet</a></li><li class="chapter-item expanded "><a href="mech/economy/resources.html"><strong aria-hidden="true">3.3.</strong> Resources</a></li></ol></li><li class="chapter-item expanded "><a href="mech/npc.html"><strong aria-hidden="true">4.</strong> NPCs</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Types</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="mech/npcs/types/soldier.html"><strong aria-hidden="true">4.1.1.</strong> Soldiers</a></li><li class="chapter-item expanded "><a href="mech/npcs/types/characters.html"><strong aria-hidden="true">4.1.2.</strong> Characters</a></li><li class="chapter-item expanded "><a href="mech/npcs/types/merchants.html"><strong aria-hidden="true">4.1.3.</strong> Merchants</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="mech/combat.html"><strong aria-hidden="true">5.</strong> Combat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="mech/combat/movecraft.html"><strong aria-hidden="true">5.1.</strong> Movecraft</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.2.</strong> Weapons</div></li></ol></li><li class="chapter-item expanded "><a href="mech/skills.html"><strong aria-hidden="true">6.</strong> Skills</a></li><li class="chapter-item expanded affix "><a href="misc/contributions.html">Contributions</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="CHANGELOG.html">Changelog</a></li><li class="chapter-item expanded affix "><li class="part-title">Map</li><li class="chapter-item expanded "><a href="map/maplore.html"><strong aria-hidden="true">1.</strong> Lore</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="map/lore/cities.html"><strong aria-hidden="true">1.1.</strong> City States</a></li></ol></li><li class="chapter-item expanded "><a href="map/mapoverview.html"><strong aria-hidden="true">2.</strong> Map Overview</a></li><li class="chapter-item expanded affix "><li class="part-title">Mechanics</li><li class="chapter-item expanded "><a href="mech/economy.html"><strong aria-hidden="true">3.</strong> Economy</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="mech/economy/market.html"><strong aria-hidden="true">3.1.</strong> Market</a></li><li class="chapter-item expanded "><a href="mech/economy/spreadsheet.html"><strong aria-hidden="true">3.2.</strong> Spreadsheet</a></li><li class="chapter-item expanded "><a href="mech/economy/resources.html"><strong aria-hidden="true">3.3.</strong> Resources</a></li></ol></li><li class="chapter-item expanded "><a href="mech/npc.html"><strong aria-hidden="true">4.</strong> NPCs</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Types</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="mech/npcs/types/soldier.html"><strong aria-hidden="true">4.1.1.</strong> Soldiers</a></li><li class="chapter-item expanded "><a href="mech/npcs/types/characters.html"><strong aria-hidden="true">4.1.2.</strong> Characters</a></li><li class="chapter-item expanded "><a href="mech/npcs/types/merchants.html"><strong aria-hidden="true">4.1.3.</strong> Merchants</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="mech/combat.html"><strong aria-hidden="true">5.</strong> Combat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="mech/combat/movecraft.html"><strong aria-hidden="true">5.1.</strong> Movecraft</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.2.</strong> Weapons</div></li></ol></li><li class="chapter-item expanded "><a href="mech/skills.html"><strong aria-hidden="true">6.</strong> Skills</a></li><li class="chapter-item expanded "><a href="mech/cults.html"><strong aria-hidden="true">7.</strong> Cults</a></li><li class="chapter-item expanded "><a href="mech/nodes.html"><strong aria-hidden="true">8.</strong> Nodes</a></li><li class="chapter-item expanded affix "><a href="misc/contributions.html">Contributions</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -142,14 +143,20 @@
 
                 <div id="content" class="content">
                     <main>
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
                         <h1 id="an-introduction-to-airshipcraft"><a class="header" href="#an-introduction-to-airshipcraft">An Introduction to AirshipCraft</a></h1>
 <blockquote>
-<p>v0.1.0 | 
+<p>v2.1.0 | 
 Documentation of the mechanics and vision for the server.</p>
 </blockquote>
 <hr />
 <blockquote>
-<p>📝 <strong>Info:</strong> This document was last updated on 2023-01-20</p>
+<p>📝 <strong>Info:</strong> This document was last updated on 2023-01-23</p>
 <p>⚠️ <strong>Warning:</strong> All information should be treated as current unless specifically told otherwise.</p>
 <p>❓ <strong>Looking for user guides? Click <a href="placeholder">here</a>.</strong></p>
 </blockquote>
@@ -160,13 +167,97 @@ Documentation of the mechanics and vision for the server.</p>
 <blockquote>
 <p>⚠️ <strong>Warning:</strong> at thie time of writing, this document is currently in major version 0 meaning there is no playable or stable version and the project is still in initial development.</p>
 </blockquote>
-<p>A table of contents is provided on the left of this page. </p>
+<h2 id="a-brief-history"><a class="header" href="#a-brief-history">A Brief History</a></h2>
+<p>This is the second iteration of AirshipCraft. The first being mjcrafter100 (now Grau_Wulf)'s original AirshipCraft from 2015. The vision for the server was little more than an SMP server focused mainly on Movecraft and Factions nothing else. Although simple it was extremely popular and loved by many. As AirshipCraft evolved it changed to become a geopolitical server which would later be known as Total War. The Total War series of Minecraft servers will continue to face their own iterations of changes but the main focus was always some sort of land claiming plugin and Movecraft.</p>
+<p>The early economy system was nothing more than a few chest shops in random locations with different buy and sell prices to simulate different regional markets and to encourage players to travel around the map on “trade runs” in-order to gain money. An archaic form of a “tech tree” was implemented, using server play time and permissions as a deciding factor in what weapons or equipment a player has access to, which as you can imagine became quickly imbalanced.</p>
+<p>AirshipCraft: Reborn (AC:R) is similar to the original AirshipCraft in it's heavy focus on Movecraft, however that is where the similarities end.</p>
 <h2 id="project-overview"><a class="header" href="#project-overview">Project Overview</a></h2>
+<blockquote>
+<p>This will serve as an overview of the entire project. More specific topics with more in-depth explanations and plans for their implementation will recieve their own section. You can view all of these sections from the table of contents on the left of this page.</p>
+</blockquote>
+<h3 id="outline"><a class="header" href="#outline">Outline</a></h3>
 <p>The purpose of this project is to fulfill the vision of creating a &quot;true&quot; geopolitical experience in Minecraft. Although it is not based on an Earth map, the map is Earth-like enough to encourage the natural growth and creation of nation states through either player or NPC manipulation. &quot;Dynamic&quot; is the key buzzword for this project.</p>
-<p>The world, much like real-life, should feel fluid and constantly changing. Changing market prices due to inflation and supply and demand patterns, wars and diplomatic actions by foreign nations, natural disasters that effect multiple aspects of life, etc. All of these are examples of things that this project attempts to replicate in the virtual world. One more </p>
+<p>The world, much like real-life, should feel fluid and constantly changing. Changing market prices due to inflation and supply and demand patterns, wars and diplomatic actions by foreign nations, natural disasters that effect multiple aspects of life, etc. All of these are examples of things that this project attempts to replicate in the virtual world. </p>
 <p>A primary focus of this project is the concentration on NPCs and heavily involving them in game mechanics. This is to keep gameplay constantly interesting as they (theoretically) serve many advantages to our goal.</p>
 <p>With NPC controlled nation states scattered across the map, there will constnatly be something for the player to do. In theory the server should be fun and playable even if the player is completely alone on the server.</p>
-<p>The goal of the economy is to be player-driven. There should be enough incentive for players acquiring currency without it being too much of an obstacle and therefore potential deterrant for new players. Finding a good balance is difficult but not impossible.</p>
+<p>The goal of the economy is to be player-driven. There should be enough incentive for players acquiring currency without it being too much of an obstacle and therefore potential deterrant for new players. Finding a good balance is difficult but not impossible. </p>
+<blockquote>
+<p>See <a href="mech/economy.html">Economy</a></p>
+</blockquote>
+<p>We want to provide a server where realistic stratagem, tactics, and creative thinking will allow players to get ahead. We want players to be able to have and control their own fully functioning and dynamic nations, towns and empires. We want to find the balance between complexity and simplicity. Allowing for in-depth and complex mechanics but still being extremely player and noob friendly but still being able to provide a steep enough learning curve to separate the good players from the amateurs in more aspects than just raw Minecraft skill. </p>
+<p>Although AirshipCraft was never traditionally marketed as a “roleplay” server (and still technically isn’t), we are taking steps to emulate a kind of “roleplay” environment to immerse players in this new world we are building. This includes the writing of lore, the creation of a quest system, player cards and other things that promote roleplay. Roleplay is highly encouraged but we will not enforce it and allow it to occur naturally.</p>
+<h3 id="game-design"><a class="header" href="#game-design">Game Design</a></h3>
+<p>The project is designed with the mindset of building a game. The goal is to design and implement gameplay elements that foster player engagement and boost player retention. Althoguh the server is designed so it could be fun without being populated, it's more beneficial for all parties if there is a sustained playerbase.</p>
+<p>This graph outlines a player’s skill vs. difficulty.<br />
+<img src="images/skill-vs-difficulty.webp" alt="Skill Vs. Difficulty" /></p>
+<p>Note this shows three difficulty levels and how players react to it based on their skills. Also note that the blue line enters all three boxes, which is important to get the most players interested in the gameplay.</p>
+<p>By itself, this means nothing. However, combine it with this graph:</p>
+<p><img src="images/interest-and-efficacy.jpeg" alt="Player Interest/Efficacy" /></p>
+<p>This shows that in the median, player interest is tied to efficacy. In other words, the better you are at something, the more you’re interested. The interest drops off according to standard deviations from the median difficulty line shown in the first graphic.</p>
+<p>The full meaning of both of these graphs isn't realized until we look at this next graph:</p>
+<p><img src="images/difficulty-challenge-graph.jpeg" alt="Difficulty and Challenge" /></p>
+<p>This shows that as you move across difficulty levels, you engage players. This implies you have a game that can watch a player’s reactions and scale difficulty based on their performance. The AI needs to constantly move between the optimal challenge line, the blue line in the first graph. It is based on these assumptions:</p>
+<ol>
+<li><strong>One cannot design a difficulty that is perfect for everyone.</strong></li>
+<li>Therefore, we must move the player above and below the difficulty line using Rewards.</li>
+<li>The best way to do this is to provide multiple reward types that cater to different styles of play.</li>
+</ol>
+<p>Rather than categorize players as high skill vs. low skill, attenuate the game to make players feel high skilled and low skilled. Both levels serve a purpose, as graph 3 shows. Note that the stuff in the quotation marks in graph 3 are the negatives of this mode.</p>
+<p>Given this, we think of the following as guiding principles:</p>
+<ul>
+<li>As players move above the optimal challenge line, they feel high satisfaction.
+<ul>
+<li>Keep them there too long and they quickly devolve to more negative feelings of the play being ‘too easy’ or ‘childish’.</li>
+</ul>
+</li>
+<li>As players move below the optimal challenge line it leads to high player effort to succeed.
+<ul>
+<li>Here the positive emotions of challenging and exciting are balanced by the negative pitfalls of it being ‘too hard’ or ‘frustrating’. You can’t keep them here too long either.</li>
+</ul>
+</li>
+<li>The key to successful engagement is to move players across this line using a rewards system that caters to both high satisfaction (ranks, levels, recognition, Right Brain motivators) and high effort (items, upgrades, bonuses, Left Brain motivators).</li>
+</ul>
+<p>And finally, again:</p>
+<ul>
+<li><strong>No two people are the same</strong>, so there is no true ‘optimal challenge line’. It is a construct used to understand from measurement when to make hurdles harder or easier based on individual player performance.</li>
+</ul>
+<p>This is one way to deal with player engagement and create addiction. Great games closely adhere to the ‘Optimal Challenge Line’ as created by each player’s skill and use the Octalysis drivers to push players back and forth across the line.</p>
+<p>Octalysis is a great breakdown of player motivations by Yu-Kai Chou. We can use the drivers here to motivate high satisfaction and high effort players, as each respond to different things.</p>
+<p>This is beautifully captured in this graphic:
+<img src="images/gamification.jpeg" alt="Octalysis of Gamification" /></p>
+<p>The graph is a very good guide on what should be kept in mind when proceeding with development of the server/project. We can however, for sake of simplicity, focus on mainly the key points of the graph.</p>
+<ul>
+<li><strong>Progress</strong>: 
+<ul>
+<li>As they advance in the game, players should feel a sense of accomplishment. Clear objectives, like leveling up different skill or techtrees or unlocking of new items or abilities, or things such as making the world more &quot;exploration worthy&quot; can help achieve this.</li>
+</ul>
+</li>
+<li><strong>Feedback</strong>: 
+<ul>
+<li>Players must receive immediate feedback on their actions, such as points earned or money earned, in order to improve gameplay and keep them engaged.</li>
+</ul>
+</li>
+<li><strong>Difficulty</strong>: 
+<ul>
+<li>The game should be challenging enough to be engaging without being too difficult to the point where players give up in frustration.</li>
+</ul>
+</li>
+<li><strong>Social</strong>: 
+<ul>
+<li>To encourage players to compete with one another, the game should have a social element like leaderboards or some sort of way to give players &quot;bragging rights&quot; but also making those bragging rights worthy of being saught out.
+<ul>
+<li>An example could possibly be the <a href="mech/cults.html">cults</a> system, or the <a href="mech/nodes.html">nodes</a> system.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Replayability</strong>: 
+<ul>
+<li>The game should entice players to return and play it repeatedly. Randomly generated content, immersive and dynamic world, and other event-like activities and objectives can help accomplish this.</li>
+</ul>
+</li>
+</ul>
+<p>A good storyline can engage players and make them want to keep playing to see what happens next. We aim to acommplish this by providing multiple quest lines that have benefits and impacts on the player who chooses to complete them and possibly (slight) drawbacks to those who don't in-order to gently nudge players to keep playing and trying different things.</p>
 <hr />
 <h4 id="written-by"><a class="header" href="#written-by">Written by:</a></h4>
 <p>Zeyad “zune” Rashed,<br />
@@ -180,7 +271,7 @@ AirshipCraft: Reborn</p>
 <p>All notable changes to this project will be documented in this file. This includes new features in-game such as plugins or mechanics, changes to existing features, plugins, mechanics, or additions/removals to the backend or frontend of the website or databases involved in the project. </p>
 <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
 and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
-<h2 id="v010---2023-1-2---2023-1-20"><a class="header" href="#v010---2023-1-2---2023-1-20">[v0.1.0] - 2023-1-2 - 2023-1-20</a></h2>
+<h2 id="v210---2023-1-2---2023-1-22"><a class="header" href="#v210---2023-1-2---2023-1-22">[v2.1.0] - 2023-1-2 - 2023-1-22</a></h2>
 <h3 id="added"><a class="header" href="#added">Added</a></h3>
 <ul>
 <li>
@@ -218,8 +309,11 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>
 <p>Map</p>
 <ul>
-<li>Began work on &quot;Port Xile&quot; as well as plotting out the starting point for &quot;Bettesville&quot;</li>
-<li>&quot;Port Xile&quot;
+<li>
+<p>Began work on &quot;Port Xile&quot; as well as plotting out the starting point for &quot;Bettesville&quot;</p>
+</li>
+<li>
+<p>&quot;Port Xile&quot;</p>
 <ul>
 <li>Market area completed, needs polishing/decorating</li>
 <li>Social area half finished, feels empty atm</li>
@@ -232,7 +326,14 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </ul>
 <h3 id="changed"><a class="header" href="#changed">Changed</a></h3>
 <ul>
-<li>Docs
+<li>
+<p>Misc</p>
+<ul>
+<li>Fixed project version to display <code>v2</code> instead of <code>v0</code>.</li>
+</ul>
+</li>
+<li>
+<p>Docs</p>
 <ul>
 <li>Restructuring of the documentation</li>
 <li>Creation of user guides</li>
@@ -259,6 +360,12 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <div style="break-before: page; page-break-before: always;"></div><h1 id="city-states"><a class="header" href="#city-states">City States</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="map-overview"><a class="header" href="#map-overview">Map Overview</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="economy"><a class="header" href="#economy">Economy</a></h1>
+<h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
+<p>The economy is a crucial point of the project/server. It builds the core of the overall gameplay design as it gives players a purpose. Building a good economic system within the game is a crucial step in setting the foundation for creating a positive feedback loop in the player's experience.</p>
+<p>A good economy allows players to trade and exchange resources in order to progress or improve their gameplay experience. Our economy system aims to include elements such as supply and demand, inflation, and player-driven marketplaces. A good economy system should allow for player choice and strategy, as well as creating opportunities for players to specialize in certain in-game activities. A balanced economy can prevent exploitation and provide fair opportunities for players to acquire resources.</p>
+<p>A balanced economy can prevent exploitation by ensuring that there is a fair distribution of resources and opportunities for all players. This can be achieved through a variety of methods, such as setting limits on the amount of resources that can be gathered or traded, or adjusting the costs of goods and services based on supply and demand; both methods we plan to implement.</p>
+<p>Additionally, a balanced economy can prevent players from cornering the market on a particular resource, or charging exorbitant prices for goods or services, by placing caps on the prices that can be charged or by adjusting the availability of resources based on player actions.</p>
+<p>If the economy is well designed enough, it will be easier for players as well as the moderators to be able to detect suspicious activity that could be caused by player exploitation and put a stop to it a lot easier.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="market"><a class="header" href="#market">Market</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="spreadsheet"><a class="header" href="#spreadsheet">Spreadsheet</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="resources"><a class="header" href="#resources">Resources</a></h1>
@@ -269,10 +376,13 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <div style="break-before: page; page-break-before: always;"></div><h1 id="combat"><a class="header" href="#combat">Combat</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="movecraft"><a class="header" href="#movecraft">Movecraft</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="skills"><a class="header" href="#skills">Skills</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="cults"><a class="header" href="#cults">Cults</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="nodes"><a class="header" href="#nodes">Nodes</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="contributions"><a class="header" href="#contributions">Contributions</a></h1>
 <h3 id="map"><a class="header" href="#map">Map:</a></h3>
 <p><a href="https://paralon.net/">Paralon</a> - The base map used.<br />
-zem - Owner of the map who also spent New Years Eve uploading the entire ~17GB file to the server directly via FTP since the download wasn't working for me.</p>
+zem - Owner of the map who also spent New Years Eve uploading the entire ~17GB file to the server directly via FTP since the download wasn't working for me.<br />
+Renzy_671 - Builder, worked on Port Xile</p>
 
                     </main>
 
@@ -324,6 +434,7 @@ zem - Owner of the map who also spent New Years Eve uploading the entire ~17GB f
         <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+        <script src="theme/pagetoc.js"></script>
 
         <script>
         window.addEventListener('load', function() {

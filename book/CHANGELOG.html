@@ -29,6 +29,7 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/pagetoc.css">
 
     </head>
     <body>
@@ -80,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="CHANGELOG.html" class="active">Changelog</a></li><li class="chapter-item expanded affix "><li class="part-title">Map</li><li class="chapter-item expanded "><a href="map/maplore.html"><strong aria-hidden="true">1.</strong> Lore</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="map/lore/cities.html"><strong aria-hidden="true">1.1.</strong> City States</a></li></ol></li><li class="chapter-item expanded "><a href="map/mapoverview.html"><strong aria-hidden="true">2.</strong> Map Overview</a></li><li class="chapter-item expanded affix "><li class="part-title">Mechanics</li><li class="chapter-item expanded "><a href="mech/economy.html"><strong aria-hidden="true">3.</strong> Economy</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="mech/economy/market.html"><strong aria-hidden="true">3.1.</strong> Market</a></li><li class="chapter-item expanded "><a href="mech/economy/spreadsheet.html"><strong aria-hidden="true">3.2.</strong> Spreadsheet</a></li><li class="chapter-item expanded "><a href="mech/economy/resources.html"><strong aria-hidden="true">3.3.</strong> Resources</a></li></ol></li><li class="chapter-item expanded "><a href="mech/npc.html"><strong aria-hidden="true">4.</strong> NPCs</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Types</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="mech/npcs/types/soldier.html"><strong aria-hidden="true">4.1.1.</strong> Soldiers</a></li><li class="chapter-item expanded "><a href="mech/npcs/types/characters.html"><strong aria-hidden="true">4.1.2.</strong> Characters</a></li><li class="chapter-item expanded "><a href="mech/npcs/types/merchants.html"><strong aria-hidden="true">4.1.3.</strong> Merchants</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="mech/combat.html"><strong aria-hidden="true">5.</strong> Combat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="mech/combat/movecraft.html"><strong aria-hidden="true">5.1.</strong> Movecraft</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.2.</strong> Weapons</div></li></ol></li><li class="chapter-item expanded "><a href="mech/skills.html"><strong aria-hidden="true">6.</strong> Skills</a></li><li class="chapter-item expanded affix "><a href="misc/contributions.html">Contributions</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="CHANGELOG.html" class="active">Changelog</a></li><li class="chapter-item expanded affix "><li class="part-title">Map</li><li class="chapter-item expanded "><a href="map/maplore.html"><strong aria-hidden="true">1.</strong> Lore</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="map/lore/cities.html"><strong aria-hidden="true">1.1.</strong> City States</a></li></ol></li><li class="chapter-item expanded "><a href="map/mapoverview.html"><strong aria-hidden="true">2.</strong> Map Overview</a></li><li class="chapter-item expanded affix "><li class="part-title">Mechanics</li><li class="chapter-item expanded "><a href="mech/economy.html"><strong aria-hidden="true">3.</strong> Economy</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="mech/economy/market.html"><strong aria-hidden="true">3.1.</strong> Market</a></li><li class="chapter-item expanded "><a href="mech/economy/spreadsheet.html"><strong aria-hidden="true">3.2.</strong> Spreadsheet</a></li><li class="chapter-item expanded "><a href="mech/economy/resources.html"><strong aria-hidden="true">3.3.</strong> Resources</a></li></ol></li><li class="chapter-item expanded "><a href="mech/npc.html"><strong aria-hidden="true">4.</strong> NPCs</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Types</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="mech/npcs/types/soldier.html"><strong aria-hidden="true">4.1.1.</strong> Soldiers</a></li><li class="chapter-item expanded "><a href="mech/npcs/types/characters.html"><strong aria-hidden="true">4.1.2.</strong> Characters</a></li><li class="chapter-item expanded "><a href="mech/npcs/types/merchants.html"><strong aria-hidden="true">4.1.3.</strong> Merchants</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="mech/combat.html"><strong aria-hidden="true">5.</strong> Combat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="mech/combat/movecraft.html"><strong aria-hidden="true">5.1.</strong> Movecraft</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.2.</strong> Weapons</div></li></ol></li><li class="chapter-item expanded "><a href="mech/skills.html"><strong aria-hidden="true">6.</strong> Skills</a></li><li class="chapter-item expanded "><a href="mech/cults.html"><strong aria-hidden="true">7.</strong> Cults</a></li><li class="chapter-item expanded "><a href="mech/nodes.html"><strong aria-hidden="true">8.</strong> Nodes</a></li><li class="chapter-item expanded affix "><a href="misc/contributions.html">Contributions</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -141,11 +142,17 @@
 
                 <div id="content" class="content">
                     <main>
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
                         <h1 id="changelog"><a class="header" href="#changelog">Changelog</a></h1>
 <p>All notable changes to this project will be documented in this file. This includes new features in-game such as plugins or mechanics, changes to existing features, plugins, mechanics, or additions/removals to the backend or frontend of the website or databases involved in the project. </p>
 <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
 and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
-<h2 id="v010---2023-1-2---2023-1-20"><a class="header" href="#v010---2023-1-2---2023-1-20">[v0.1.0] - 2023-1-2 - 2023-1-20</a></h2>
+<h2 id="v210---2023-1-2---2023-1-22"><a class="header" href="#v210---2023-1-2---2023-1-22">[v2.1.0] - 2023-1-2 - 2023-1-22</a></h2>
 <h3 id="added"><a class="header" href="#added">Added</a></h3>
 <ul>
 <li>
@@ -183,8 +190,11 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>
 <p>Map</p>
 <ul>
-<li>Began work on &quot;Port Xile&quot; as well as plotting out the starting point for &quot;Bettesville&quot;</li>
-<li>&quot;Port Xile&quot;
+<li>
+<p>Began work on &quot;Port Xile&quot; as well as plotting out the starting point for &quot;Bettesville&quot;</p>
+</li>
+<li>
+<p>&quot;Port Xile&quot;</p>
 <ul>
 <li>Market area completed, needs polishing/decorating</li>
 <li>Social area half finished, feels empty atm</li>
@@ -197,7 +207,14 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </ul>
 <h3 id="changed"><a class="header" href="#changed">Changed</a></h3>
 <ul>
-<li>Docs
+<li>
+<p>Misc</p>
+<ul>
+<li>Fixed project version to display <code>v2</code> instead of <code>v0</code>.</li>
+</ul>
+</li>
+<li>
+<p>Docs</p>
 <ul>
 <li>Restructuring of the documentation</li>
 <li>Creation of user guides</li>
@@ -283,6 +300,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
         <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+        <script src="theme/pagetoc.js"></script>
 
 
     </body>
