@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file. This includ
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v0.1.0] - 2023-1-2 - 2023-1-20
+## [v2.1.0] - 2023-1-2 - 2023-1-22
 ### Added 
 - Web
   - Seperate repositories for better version control via git
@@ -33,6 +33,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Residential area near complete, needs a few more blocks to fill out space as well as creation of a "high end" district
 
 ### Changed
+- Misc
+  - Fixed project version to display ``v2`` instead of ``v0``.
+
 - Docs
   - Restructuring of the documentation
   - Creation of user guides
