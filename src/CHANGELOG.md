@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Changed structure of the table of contents
     - Moved the Map section underneath the Mechanics section as it made more sense
   - Moved "Lore" page to no longer be nested underneath the Map section and instead moved under Misc.
+  - Updated footer on first page
 
 ### Removed
 ## [v2.1.0] - 2023-1-2 - 2023-1-23
