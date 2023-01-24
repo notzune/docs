@@ -1,6 +1,5 @@
 > <span style="color:red">Currently unimplemented.</span>
 # Economy
-## Overview
 The economy is a crucial point of the project/server. It builds the core of the overall gameplay design as it gives players a purpose. Building a good economic system within the game is a crucial step in setting the foundation for creating a positive feedback loop in the player's experience.   
 
 A good economy allows players to trade and exchange resources in order to progress or improve their gameplay experience. Our economy system aims to include elements such as supply and demand, inflation, and player-driven marketplaces. A good economy system should allow for player choice and strategy, as well as creating opportunities for players to specialize in certain in-game activities. A balanced economy can prevent exploitation and provide fair opportunities for players to acquire resources.   
