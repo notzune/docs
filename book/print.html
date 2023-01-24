@@ -1031,6 +1031,9 @@
                         <!-- Page table of contents -->
                         <div class="sidetoc"><nav class="pagetoc"></nav></div>
 
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
                         <h1 id="an-introduction-to-airshipcraft"><a class="header" href="#an-introduction-to-airshipcraft">An Introduction to AirshipCraft</a></h1>
 <blockquote>
 <p>v2.1.0 | 
@@ -1038,7 +1041,7 @@ Documentation of the mechanics and vision for the server.</p>
 </blockquote>
 <hr />
 <blockquote>
-<p>📝 <strong>Info:</strong> This document was last updated on 2023-01-23</p>
+<p>📝 <strong>Info:</strong> This document was last updated on 2023-01-24</p>
 <p>⚠️ <strong>Warning:</strong> All information should be treated as current unless specifically told otherwise.</p>
 <p>❓ <strong>Looking for user guides? Click <a href="placeholder">here</a>.</strong></p>
 </blockquote>
@@ -1150,7 +1153,7 @@ Documentation of the mechanics and vision for the server.</p>
 <p><span style="color:green">Implemented as of YYYY-MM-DD.</span></p>
 </blockquote>
 <blockquote>
-<p><span style="color:yellow">Currently being worked on as of YYYY-MM-DD.</span></p>
+<p><span style="color:yellow">Currently being developed on as of YYYY-MM-DD.</span></p>
 </blockquote>
 <p>These notes give a sort of status indication of what features have been added, which are currently being worked on, and what features have not been implemented at all.</p>
 <hr />
@@ -1163,11 +1166,45 @@ AirshipCraft: Reborn</p>
 <p><a href="https://www.airshipcraft.tk/">Website</a><br />
 <a href="https://discord.gg/E287MWbVUK">Discord</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="changelog"><a class="header" href="#changelog">Changelog</a></h1>
-<p>All notable changes to this project will be documented in this file. This includes new features in-game such as plugins or mechanics, changes to existing features, plugins, mechanics, or additions/removals to the backend or frontend of the website or databases involved in the project. </p>
+<p>All notable changes to this project will be documented in this file. This includes new features in-game such as plugins or mechanics, changes to existing features, plugins, mechanics, or additions/removals to the backend or frontend of the website or databases involved in the project as well as most notibly, changes to this documentation. </p>
 <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
 and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
-<h2 id="v210---2023-1-2---2023-1-23"><a class="header" href="#v210---2023-1-2---2023-1-23">[v2.1.0] - 2023-1-2 - 2023-1-23</a></h2>
+<h2 id="v211---2023-1-24---2023-1-24"><a class="header" href="#v211---2023-1-24---2023-1-24">[v2.1.1] - 2023-1-24 - 2023-1-24</a></h2>
 <h3 id="added"><a class="header" href="#added">Added</a></h3>
+<ul>
+<li>Docs
+<ul>
+<li><del>Began writing of the project overview</del> (DONE)</li>
+<li>Added various economy related pages</li>
+<li>Begun implementation of page tags such as &quot;Unimplemented&quot;, &quot;Implemented&quot; and &quot;Currently being developed&quot;
+<ul>
+<li>For now they are just text tags</li>
+</ul>
+</li>
+<li>Created new Misc. section
+<ul>
+<li>Currently includes &quot;Lore&quot; and &quot;Quest&quot; pages.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="changed"><a class="header" href="#changed">Changed</a></h3>
+<ul>
+<li>Docs
+<ul>
+<li>Changed structure of the table of contents
+<ul>
+<li>Moved the Map section underneath the Mechanics section as it made more sense</li>
+</ul>
+</li>
+<li>Moved &quot;Lore&quot; page to no longer be nested underneath the Map section and instead moved under Misc.</li>
+</ul>
+</li>
+</ul>
+<h3 id="removed"><a class="header" href="#removed">Removed</a></h3>
+<h2 id="v210---2023-1-2---2023-1-23"><a class="header" href="#v210---2023-1-2---2023-1-23">[v2.1.0] - 2023-1-2 - 2023-1-23</a></h2>
+<h3 id="added-1"><a class="header" href="#added-1">Added</a></h3>
 <ul>
 <li>
 <p>Web</p>
@@ -1219,7 +1256,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </ul>
 </li>
 </ul>
-<h3 id="changed"><a class="header" href="#changed">Changed</a></h3>
+<h3 id="changed-1"><a class="header" href="#changed-1">Changed</a></h3>
 <ul>
 <li>
 <p>Misc</p>
@@ -1236,7 +1273,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </ul>
 </li>
 </ul>
-<h3 id="removed"><a class="header" href="#removed">Removed</a></h3>
+<h3 id="removed-1"><a class="header" href="#removed-1">Removed</a></h3>
 <ul>
 <li>
 <p>Web</p>
@@ -1272,24 +1309,34 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <p>See <a href="mech/economy/market.html">Market</a></p>
 </blockquote>
 <h2 id="currency"><a class="header" href="#currency">Currency</a></h2>
-<p>A physical item currency will be implemented. Theoretically, we will be able to allow players to mint their own currencies and assign them value based on in-game factors to allow for currency exchanges and a more competitive economic ecosystem. </p>
+<p>A physical item currency will be implemented. Theoretically, we will be able to allow players to mint their own currencies and assign them value based on in-game factors to allow for currency exchanges and a more competitive economic ecosystem.</p>
+<p>This will also allow for more complex actions and for more customizability and incentives to form things such as <a href="mech/economy/banking.html">banks</a> and <a href="mech/economy/companies.html">companies</a>.</p>
+<p>Also by implementing a physical item based currency it gives more incentive to raiding, PvP, and wars.</p>
 <div style="break-before: page; page-break-before: always;"></div><blockquote>
 <p><span style="color:red">Currently unimplemented.</span></p>
 </blockquote>
 <h1 id="market"><a class="header" href="#market">Market</a></h1>
+<p>The market system is the backbone of the economy. </p>
 <h2 id="overview-1"><a class="header" href="#overview-1">Overview</a></h2>
 <p>There will be two parts to the market. The <strong>global</strong> and the <strong>local</strong> market. </p>
 <p>The <strong>global market</strong> determines things on a server-wide scale such as price ceiling to set the default cost of items put on sale on the market if not specificed by the user. It also creates an index on the webserver as a reference for players to be able to see a <a href="mech/economy/economy/spreadsheet.html">spreadsheet</a> of the current market prices of items. The global market is meant to be a guideline to build the local markets but should not be limiting to the end user in any real way.</p>
 <p>The <strong>local market</strong> determines prices and sale of goods on a <a href="mech/economy/../../map/regions.html">region</a> basis. Much like the <strong>global market</strong>, the local market sets priece ceilings on items and uses the global market prices to set the minimum price on items. The local market also records how many unique vendors sell a certain item in that region and inversely raises the price ceiling to allow players a chance to be able to corner the market in that specific region.</p>
 <h2 id="the-global-market"><a class="header" href="#the-global-market">The Global Market</a></h2>
 <p>The global market price system takes two variables: The default start price as defined by the server (A) and the number of items recorded in the <strong>global supply</strong> (B).</p>
-<p>The <strong>glohal market</strong> monitors the <strong>supply</strong> of items server-wide. Supply is the amount of items submitted to chests connected to a vendor/merchant <a href="mech/economy/npcs/types/merchants.html">NPC</a>. This keeps track of the <strong>global supply</strong> of items. As the supply increases the global price cap lowers. </p>
+<p>The <strong>glohal market</strong> monitors the <strong>supply</strong> of items server-wide. Supply is the amount of items submitted to chests connected to a vendor/merchant <a href="mech/economy/npcs/types/merchants.html">NPC</a>. This keeps track of the <strong>global supply</strong> of items. As the supply increases the global price cap lowers which in turn will lower the global default price of items. </p>
+<h2 id="the-local-market-per-region-markets"><a class="header" href="#the-local-market-per-region-markets">The Local Market (Per-region Markets)</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><blockquote>
 <p><span style="color:red">Currently unimplemented.</span></p>
 </blockquote>
 <h1 id="spreadsheet"><a class="header" href="#spreadsheet">Spreadsheet</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="banking"><a class="header" href="#banking">Banking</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="companies"><a class="header" href="#companies">Companies</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><blockquote>
+<p><span style="color:red">Currently unimplemented.</span></p>
+</blockquote>
+<h1 id="banking"><a class="header" href="#banking">Banking</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><blockquote>
+<p><span style="color:red">Currently unimplemented.</span></p>
+</blockquote>
+<h1 id="companies"><a class="header" href="#companies">Companies</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="resources"><a class="header" href="#resources">Resources</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="npcs"><a class="header" href="#npcs">NPCs</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="soldiers"><a class="header" href="#soldiers">Soldiers</a></h1>

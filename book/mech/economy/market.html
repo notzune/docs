@@ -1030,17 +1030,22 @@
                         <!-- Page table of contents -->
                         <div class="sidetoc"><nav class="pagetoc"></nav></div>
 
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
                         <blockquote>
 <p><span style="color:red">Currently unimplemented.</span></p>
 </blockquote>
 <h1 id="market"><a class="header" href="#market">Market</a></h1>
+<p>The market system is the backbone of the economy. </p>
 <h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
 <p>There will be two parts to the market. The <strong>global</strong> and the <strong>local</strong> market. </p>
 <p>The <strong>global market</strong> determines things on a server-wide scale such as price ceiling to set the default cost of items put on sale on the market if not specificed by the user. It also creates an index on the webserver as a reference for players to be able to see a <a href="economy/spreadsheet.html">spreadsheet</a> of the current market prices of items. The global market is meant to be a guideline to build the local markets but should not be limiting to the end user in any real way.</p>
 <p>The <strong>local market</strong> determines prices and sale of goods on a <a href="../../map/regions.html">region</a> basis. Much like the <strong>global market</strong>, the local market sets priece ceilings on items and uses the global market prices to set the minimum price on items. The local market also records how many unique vendors sell a certain item in that region and inversely raises the price ceiling to allow players a chance to be able to corner the market in that specific region.</p>
 <h2 id="the-global-market"><a class="header" href="#the-global-market">The Global Market</a></h2>
 <p>The global market price system takes two variables: The default start price as defined by the server (A) and the number of items recorded in the <strong>global supply</strong> (B).</p>
-<p>The <strong>glohal market</strong> monitors the <strong>supply</strong> of items server-wide. Supply is the amount of items submitted to chests connected to a vendor/merchant <a href="npcs/types/merchants.html">NPC</a>. This keeps track of the <strong>global supply</strong> of items. As the supply increases the global price cap lowers. </p>
+<p>The <strong>glohal market</strong> monitors the <strong>supply</strong> of items server-wide. Supply is the amount of items submitted to chests connected to a vendor/merchant <a href="npcs/types/merchants.html">NPC</a>. This keeps track of the <strong>global supply</strong> of items. As the supply increases the global price cap lowers which in turn will lower the global default price of items. </p>
+<h2 id="the-local-market-per-region-markets"><a class="header" href="#the-local-market-per-region-markets">The Local Market (Per-region Markets)</a></h2>
 
                     </main>
 
