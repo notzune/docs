@@ -121,14 +121,13 @@ Planned features which are outlined and explained in any of the subsections to t
 These notes give a sort of status indication of what features have been added, which are currently being worked on, and what features have not been implemented at all.
 
 ---
-## Author
-
-**Written by**:
+**Written by**:   
 Zeyad “zune” Rashed,  
 Head Developer and Project Manager  
 AirshipCraft  
 AirshipCraft: Reborn  
 
-**Contact**:
-[Website](https://www.airshipcraft.tk/)  
-[Discord](https://discord.gg/E287MWbVUK)
+**Contact**:    
+[Website](https://www.airshipcraft.tk/) (Homepage)  
+[Discord](https://discord.gg/E287MWbVUK) (Discord)    
+[GitHub](https://github.com/notzune/docs/issues) (GitHub Repo)
