@@ -45,6 +45,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Web
   - Documentation and homepage from main web repository, moved to seperate repo
+  - Configured Dynmap 
+    - To use external webserver instead of the default internal webserver
+    - Installed LiveAtlas UI
+    - New link: [https://airshipcraft.tk/map](https://airshipcraft.tk/map)
 
 - Discord
   - Moved ``core`` module of Arya to seperate repository
