@@ -3,7 +3,7 @@
 Documentation of the mechanics and vision for the server.
 ---
 
-> 📝 **Info:** This document was last updated on 2023-01-23
+> 📝 **Info:** This document was last updated on 2023-01-24
 > 
 > ⚠️ **Warning:** All information should be treated as current unless specifically told otherwise.
 >
@@ -107,6 +107,18 @@ The graph is a very good guide on what should be kept in mind when proceeding wi
   - The game should entice players to return and play it repeatedly. Randomly generated content, immersive and dynamic world, and other event-like activities and objectives can help accomplish this.
 
 A good storyline can engage players and make them want to keep playing to see what happens next. We aim to acommplish this by providing multiple quest lines that have benefits and impacts on the player who chooses to complete them and possibly (slight) drawbacks to those who don't in-order to gently nudge players to keep playing and trying different things.   
+
+### Purpose of These Docs
+This documentation serves as a guide to potential/future developers who have graciously volunteered or have been brought on to the team to work on AirshipCraft.   
+
+Planned features which are outlined and explained in any of the subsections to the left of this page might include a note at the top of the page such as: 
+> <span style="color:red">Currently unimplemented.</span>
+      
+> <span style="color:green">Implemented as of YYYY-MM-DD.</span>
+    
+> <span style="color:yellow">Currently being worked on as of YYYY-MM-DD.</span>
+
+These notes give a sort of status indication of what features have been added, which are currently being worked on, and what features have not been implemented at all.
 
 ---
 #### Written by:
