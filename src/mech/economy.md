@@ -10,4 +10,3 @@ A balanced economy can prevent exploitation by ensuring that there is a fair dis
 Additionally, a balanced economy can prevent players from cornering the market on a particular resource, or charging exorbitant prices for goods or services, by placing caps on the prices that can be charged or by adjusting the availability of resources based on player actions.
 
 If the economy is well designed enough, it will be easier for players as well as the moderators to be able to detect suspicious activity that could be caused by player exploitation and put a stop to it a lot easier.
-
