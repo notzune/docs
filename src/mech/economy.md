@@ -15,4 +15,8 @@ If the economy is well designed enough, it will be easier for players as well as
 > See [Market](economy/market.md)
    
 ## Currency
-A physical item currency will be implemented. Theoretically, we will be able to allow players to mint their own currencies and assign them value based on in-game factors to allow for currency exchanges and a more competitive economic ecosystem. 
+A physical item currency will be implemented. Theoretically, we will be able to allow players to mint their own currencies and assign them value based on in-game factors to allow for currency exchanges and a more competitive economic ecosystem.   
+
+This will also allow for more complex actions and for more customizability and incentives to form things such as [banks](economy/banking.md) and [companies](economy/companies.md).   
+
+Also by implementing a physical item based currency it gives more incentive to raiding, PvP, and wars.
