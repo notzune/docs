@@ -7,6 +7,8 @@
 - [Economy](mech/economy.md)
   - [Market](mech/economy/market.md)
   - [Spreadsheet](mech/economy/spreadsheet.md)
+  - [Banking](mech/economy/banking.md)
+  - [Companies](mech/economy/companies.md)
   - [Resources](mech/economy/resources.md)
 
 - [NPCs](mech/npc.md)
