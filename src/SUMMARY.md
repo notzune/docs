@@ -3,11 +3,6 @@
 [Introduction](README.md)
 [Changelog](CHANGELOG.md)
 
-# Map
-- [Lore](map/maplore.md)
-  - [City States](map/lore/cities.md)
-
-- [Map Overview](map/mapoverview.md)
 # Mechanics
 - [Economy](mech/economy.md)
   - [Market](mech/economy/market.md)
@@ -27,5 +22,14 @@
 - [Skills](mech/skills.md)
 - [Cults](mech/cults.md)
 - [Nodes](mech/nodes.md)
+- [Quests](mech/quests.md)
+
+# Map
+- [Regions](map/regions.md)
+- [City States](map/cities.md)
+- [Map Overview](map/mapoverview.md)
+  
+# Misc
+- [Lore](misc/lore.md)
 
 [Contributions](misc/contributions.md)
