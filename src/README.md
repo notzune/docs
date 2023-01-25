@@ -116,7 +116,7 @@ Planned features which are outlined and explained in any of the subsections to t
       
 > <span style="color:green">Implemented as of YYYY-MM-DD.</span>
     
-> <span style="color:yellow">Currently being developed on as of YYYY-MM-DD.</span>
+> <span style="color:yellow">Currently being developed as of YYYY-MM-DD.</span>
 
 These notes give a sort of status indication of what features have been added, which are currently being worked on, and what features have not been implemented at all.
 
