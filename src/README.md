@@ -106,7 +106,14 @@ The graph is a very good guide on what should be kept in mind when proceeding wi
 - **Replayability**: 
   - The game should entice players to return and play it repeatedly. Randomly generated content, immersive and dynamic world, and other event-like activities and objectives can help accomplish this.
 
-A good storyline can engage players and make them want to keep playing to see what happens next. We aim to acommplish this by providing multiple quest lines that have benefits and impacts on the player who chooses to complete them and possibly (slight) drawbacks to those who don't in-order to gently nudge players to keep playing and trying different things.   
+A good storyline can engage players and make them want to keep playing to see what happens next. We aim to acommplish this by providing multiple quest lines that have benefits and impacts on the player who chooses to complete them and possibly (slight) drawbacks to those who don't in-order to gently nudge players to keep playing and trying different things.
+
+### Philosophy
+It's important to maintain a common shared philosophy when designing or working on mechanics. The general mantra is to add quality of life (QOL) improvements to the player whenever possible. If we are able to streamline the boring, basic, vanilla mechanics and make it very easy, or in some cases automated, for the player: the player can focus on the unique, more interesting and "fun" mechanics we have designed for them.   
+
+If a player sits and has to mine or farm for resources manually for everything they need then they will only spend about 1/4th or less of their time actually playing the game since 3/4ths of it would be spent grinding. **Try to limit uneccessary grinds.**    
+
+Designing any sort of progression system or mechanic that requires players to put in effort is **good** (as we have stated before in the previous section), however, there's a difference between challenging and time consuming and we want to limit time consuming whenever possible. 
 
 ### Purpose of These Docs
 This documentation serves as a guide to potential/future developers who have graciously volunteered or have been brought on to the team to work on AirshipCraft.   
