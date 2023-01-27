@@ -5,11 +5,15 @@ All notable changes to this project will be documented in this file. This includ
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.1.1.1] - 2023-1-25
+## [v2.1.2] - 2023-1-25 - 2023-1-27
 
 ### Added
 - Docs
   - Added "philosophy" section to the introduction page.
+  - Added page for [land claiming](mech/nation-system.md)
+  - Added page explaining [nodes](mech/nodes.md)
+    - Page to explain the [territories](mech/nodes/territories.md) better
+    - Explain using [handles over IDs](mech/nodes/handles-over-ids.md)
 ### Changed
 
 ### Removed
