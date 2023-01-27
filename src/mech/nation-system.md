@@ -1,3 +1,4 @@
+> <span style="color:red">Currently unimplemented.</span>
 # Claiming System
 The claiming system, as mentioned in the [Nodes](nodes.md) page, will be essentially a fork of [Towny](https://github.com/TownyAdvanced/Towny) with a few elements from other plugins.
 
@@ -25,4 +26,15 @@ In Towny, wars are either too fast (the flag-war system, the attrition system wh
 
 The brightside of Towny is that it's constantly being updated by competent developers, and those developers are also very helpful when it comes to adding new features using their API and will sometimes even lend a hand in development.
 
-I believe that Towny is a good base for our new hybrid claims system because of this reason alone, not tom ention it already has the basic object hierarchy structure that we can work off of. 
+I believe that Towny is a good base for our new hybrid claims system because of this reason alone, not tom ention it already has the basic object hierarchy structure that we can work off of. I beleive [phonon's nodes](https://github.com/crusalis/multi-nodes) would not be an acceptable base for our fork as it is way too barebones compared to Towny and removes necessary features that we can use to expand off of such as the different ``plot-types`` built in the Towny API. Not to mention that the source for phonon's nodes is written in Kotlin which will make collaboration significantly harder as it's currently not a widely accepted language standard for plugin development. 
+
+## Why the fork is necessary:
+
+Forking Towny is necessary as it plans to offer better implementation of certain gameplay features that vanilla base-Towny can't offer as it would be too niche for them to consider. Features such as:
+
+- Direct support and integration of the proposed [nodes](nodes.md) system.
+- Integration for the [cults](cults.md) mechanic.
+- Better integration with Movecraft.
+- Direct integration for proposed [NPC](npc.md) mechanics such as: 
+  - Spawning of [soldiers](npcs/types/soldier.md)
+  - Implementation of proposed mechanics of NPC nations
