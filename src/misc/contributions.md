@@ -2,6 +2,9 @@
 This page contains a list of all of the kind and amazing people who have contributed piecs of work to the project. If you have helped with the project and do not see your name here please message zune (zune#8662) on Discord!
 
 ## Mechanics:
+### Economy
+#### Resource System
+[ProgrammerDan](http://programmerdan.com/)
 
 ### Claiming System
 [Towny](https://github.com/TownyAdvanced)
