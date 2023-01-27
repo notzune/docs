@@ -24,6 +24,7 @@
 - [Skills](mech/skills.md)
 - [Cults](mech/cults.md)
 - [Nodes](mech/nodes.md)
+- [Claiming System](mech/nation-system.md)
 - [Quests](mech/quests.md)
 
 # Map
