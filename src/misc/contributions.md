@@ -2,12 +2,15 @@
 This page contains a list of all of the kind and amazing people who have contributed piecs of work to the project. If you have helped with the project and do not see your name here please message zune (zune#8662) on Discord!
 
 ## Mechanics:
+### Economy
+#### Resource System
+[ProgrammerDan](http://programmerdan.com/) - HiddenOre and CropControl
 
 ### Claiming System
-[Towny](https://github.com/TownyAdvanced)
+[Towny](https://github.com/TownyAdvanced)    
 [LlmDl](https://github.com/LlmDl)
 #### Nodes
-[**phonon**](https://github.com/phonon)    
+[**phonon**](https://github.com/phonon) - Territories/node system    
 [multi-nodes](https://github.com/crusalis/multi-nodes)
 
 ## Web:
