@@ -20,6 +20,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Added page explaining [nodes](mech/nodes.md)
     - Page to explain the [territories](mech/nodes/territories.md) better
     - Explain using [handles over IDs](mech/nodes/handles-over-ids.md)
+  - Economy related pages:
+    - [Resources](mech/economy/resources.md)
+    - [Market](mech/economy/market.md)
+    - [Banking](mech/economy/banking.md)
 
 ### Changed
 - Docs

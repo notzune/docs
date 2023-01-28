@@ -4,13 +4,13 @@ This page contains a list of all of the kind and amazing people who have contrib
 ## Mechanics:
 ### Economy
 #### Resource System
-[ProgrammerDan](http://programmerdan.com/)
+[ProgrammerDan](http://programmerdan.com/) - HiddenOre and CropControl
 
 ### Claiming System
-[Towny](https://github.com/TownyAdvanced)
+[Towny](https://github.com/TownyAdvanced)    
 [LlmDl](https://github.com/LlmDl)
 #### Nodes
-[**phonon**](https://github.com/phonon)    
+[**phonon**](https://github.com/phonon) - Territories/node system    
 [multi-nodes](https://github.com/crusalis/multi-nodes)
 
 ## Web:
