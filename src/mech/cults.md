@@ -1,1 +1,3 @@
+> <span style="color:yellow">Currently being developed as of 2023-01-28.</span>
 # Cults
+The purpose of ``cults`` is to provide another layer to gameplay. By allowing players to be creative in creating these fictious sects and design their own ideologies within the confines of the server, we open up avenues for player creativity and roleplay opportunities. As we have discussed in the introducatory pages of this documentation, increasing player engagement is one of our main goals in designing this project.
