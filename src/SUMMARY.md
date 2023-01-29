@@ -26,11 +26,14 @@
 
 - [Skills](mech/skills.md)
 - [Cults](mech/cults.md)
+  
 - [Nodes](mech/nodes.md)
   - [Territories](mech/nodes/territories.md)
   - [Prefer Handles over IDs](mech/nodes/handles-over-ids.md)
+  
 - [Claiming System](mech/nation-system.md)
   - [Objects](mech/nations/objects.md)
+  
 - [Quests](mech/quests.md)
 
 # Map
