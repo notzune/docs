@@ -18,3 +18,5 @@ The following is a quick ten-point summary of the plugin:
 8. Followers of the cult can lose or gain favor with their god/deity
 9. Headpriests can appoint fellow worshipers as priests
 10. Headpriests and priests can pray to their deity for "miracles" or to put "curses" 
+
+## Altars and Shrines
