@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file. This includ
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.1.1] - 2023-1-24 - 2023-1-27
+## [v2.1.1] - 2023-1-24 - 2023-1-29
 
 ### Added
 - Docs
@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - [Resources](mech/economy/resources.md)
     - [Market](mech/economy/market.md)
     - [Banking](mech/economy/banking.md)
+  - [Cults](mech/cults.md) page.
 
 ### Changed
 - Docs
@@ -31,6 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Moved the Map section underneath the Mechanics section as it made more sense
   - Moved "Lore" page to no longer be nested underneath the Map section and instead moved under Misc.
   - Updated footer on first page
+  - Fixed various small formatting errors 
 
 ### Removed
 ## [v2.1.0] - 2023-1-2 - 2023-1-23

@@ -91,7 +91,7 @@ Ok direct references:
 - Short lived objects that are not stored (e.g. events)
 
 ## Type safe handles
-> ⚠️ Note: This section is deprecated as we are moving back to JDK in-order to keep uniformity for collaboration sake.    
+> 📝 **Note**: This section is deprecated as we are moving back to JDK in-order to keep uniformity for collaboration sake.    
 
 Kotlin allows type safe wrappers around basic identifiers with [value
 classes](https://kotlinlang.org/docs/inline-classes.html):
