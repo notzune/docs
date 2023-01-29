@@ -26,6 +26,9 @@
 
 - [Skills](mech/skills.md)
 - [Cults](mech/cults.md)
+  - [Objects](mech/cults/objects.md)
+  - [Altars](mech/cults/altars.md)
+  - [Shrines](mech/cults/shrines.md)
   
 - [Nodes](mech/nodes.md)
   - [Territories](mech/nodes/territories.md)
