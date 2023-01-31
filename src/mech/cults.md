@@ -1,15 +1,16 @@
-> <span style="color:yellow">Currently being developed as of 2023-01-28.</span>
+> <span style="color:yellow">Currently being developed as of 2023-01-28.</span>    
+   
+> ⚠️ **Warning:** This page is still under construction!
 # Cults
 The purpose of the cults plugin is to provide another layer to gameplay. By allowing players to be creative in creating these fictious sects and design their own ideologies within the confines of the server, we open up avenues for player creativity and roleplay opportunities. As we have discussed in the introducatory pages of this documentation, increasing player engagement is one of our main goals in designing this project.
 
 ## Overview
 The proposed plan for the cults system has many moving parts to it. This page was written in hopes to clarify the vision for the the plugin and its integration within the project including how it will interact with the other plugins/mechanics of the server. Each feature and mechanic of the plugin will be broken down further in this page and subsequent pages within this section.    
-
  
-> 📝 **Note**: The terms "deity" and "god" are also interchangable and there is no difference between the two terms besides semantics.  God and deity are synonymous. According to their basic definitions, they both represent a supreme power. However, sometimes God as a term is used to represent the only supreme power, whereas deity can be used to refer to any of the forms of this supreme power and thus can be multiple in number. God is generally used in context to male gods, whereas deity can be used to refer to both god and goddess (female god).   
+> 📝 **Note:** The terms "deity" and "god" are also interchangable and there is no difference between the two terms besides semantics.  God and deity are synonymous. According to their basic definitions, they both represent a supreme power. However, sometimes God as a term is used to represent the only supreme power, whereas deity can be used to refer to any of the forms of this supreme power and thus can be multiple in number. God is generally used in context to male gods, whereas deity can be used to refer to both god and goddess (female god).   
     
 The following is a quick ten-point summary of the plugin: 
-1. A player creates an altar in-order to pray to a deity. 
+1. A player creates an [altar](cults/altars.md) in-order to pray to a deity. 
 2. If the deity doesn't exist then a new religion (cult) is formed and that deity is registered, and the player who created the altar becomes the headpriest for that cult.
 3. If another player "prays" to that altar and they do not belong to a cult yet, they will join that cult and become a follower of that deity they just prayed to
 4. A "pantheon" can be created which is essentially a grouping of different cults/deities together. Members within a cult who are also part of a pantheon can pray to other deities within the pantheon.
@@ -23,9 +24,11 @@ The following is a quick ten-point summary of the plugin:
 For a better understanding, start reading from this page to be able to visualize the internal object classes:
 > See [Objects](cults/objects.md)    
 
-## Altars vs. Shrines
-Shrines and Altars differ significantly in both form and function.
-### Altars
+## Basic Usage
+To create a `Cult` one must first build an [`Altar`](cults/altars.md) which is a multiblock structure consisting of a block, a sign and a candle. Upon right clicking the sign, the plugin searches to make sure that the Deity listed
+
+## Altars vs Shrines
+### Altar
 An altar is defined as a multi-block structure with three (3) main components:
 1. The altar block - The central piece to the altar
 2. The altar sign - The sign attached to the altar. Has ``[Altar]`` on the first line. Right clicking it creates the altar and allows the player to pray to the altar.

@@ -1,8 +1,9 @@
+> ⚠️ **Warning:** This page is still under construction!
 # Objects
 This page details and outlines the object classes in the plugin as well as attempting to give a detailed explanation of their functionality, both from a programming perspective and an in-game perspective.
 
 ## Object Hierarchy
-> 📝 **Note**: This diagram is mainly just a placeholder for now but should give the general sense of the object-class hierarchy.
+> 📝 **Note:** This diagram is mainly just a placeholder for now but should give the general sense of the object-class hierarchy.
     
 ```
           ┌────────┐
@@ -37,7 +38,7 @@ This page details and outlines the object classes in the plugin as well as attem
 ```
 
 ### Nameable
-A simple interface to show that a class can be named, agnostic if it's a CultsObject or not.
+A simple interface to show that a class can be named, agnostic if it's a `CultsObject` or not.
 ```java
 public interface Nameable {
     /**
@@ -64,17 +65,58 @@ public abstract class CultsObject implements Nameable {
 
     String name;
     UUID id;
-    protected CultsObject(String name) { this.name = name; }
-    public void setName(String name) { this.name = name; }
-    public String getName() { return name; }
-    public void setId(UUID id) { this.id = id; }
-    public UUID getId() { return id; }
+    protected CultsObject(String name) { 
+        this.name = name; 
+    }
+
+    public void setName(String name) { 
+        this.name = name; 
+    }
+
+    public String getName() { 
+        return name; 
+    }
+
+    public void setId(UUID id) { 
+        this.id = id; 
+    }
+
+    public UUID getId() { 
+        return id; 
+    }
+
     @Override
-    public String toString() { return getName(); }
+    public String toString() { 
+        return getName(); 
+    }
 }
 ```
 
 ### Believer
+The `Believer` class is a simple class that extends `CultsObject` and its main purpose is to register the player as a "believer" entity.
+```java
+public class Believer extends CultsObject {
 
+    String name;
 
+    protected Believer(String name) { 
+        super(name); 
+    }
+
+    @Override
+    public String getName() { 
+        return name; 
+    }
+
+    @Override
+    public UUID getId() { 
+        return super.getId(); 
+    }
+}
+```
+### Deity
+The `Deity` class also extends `CultsObject`. The purpose of this class is to represnet a "deity/god" entity which is created upon interaction with an `Altar` for the first time. 
+
+### Cult
+Finally we reach the `Cult` object. A Cult takes a list of `Believers` as its members, a single `Believer` as its `HeadPriest` and a single `Diety` as it's main deity (agnostic of whether it's part of a `Pantheon` or not). It also records the coords of its `Altar` and saves that as its "holy land".
 
