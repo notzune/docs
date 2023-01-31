@@ -22,7 +22,7 @@
 
 - [Combat](mech/combat.md)
   - [Movecraft](mech/combat/movecraft.md)
-  - [Weapons]()
+  - [Weapons](mech/combat/weapons.md)
 
 - [Skills](mech/skills.md)
 - [Cults](mech/cults.md)
@@ -43,7 +43,10 @@
 - [Regions](map/regions.md)
 - [City States](map/cities.md)
 - [Map Overview](map/mapoverview.md)
-  
+
+# Administration
+- [Project Timeline](administration/project-timeline.md)
+  - [Phase 1](administration/timeline/phase-1.md)
 # Misc
 - [Lore](misc/lore.md)
 - [Stats](misc/playerstats.md)
