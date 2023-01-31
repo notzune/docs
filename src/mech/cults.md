@@ -15,26 +15,22 @@ The following is a quick ten-point summary of the plugin:
 3. If another player "prays" to that altar and they do not belong to a cult yet, they will join that cult and become a follower of that deity they just prayed to
 4. A "pantheon" can be created which is essentially a grouping of different cults/deities together. Members within a cult who are also part of a pantheon can pray to other deities within the pantheon.
 5. The opposite holds true, and cults can label other cults as "enemies" or "heretics" making their deities forbidden to their worshippers
-6. As time goes on and the cult gains more of a following, headpriests gain more power and can set laws for their religion called "canon"
+6. As time goes on and the cult gains more of a following, head priests gain more power and can set laws for their religion called "canon"
 7. Canon laws can include things such as what kind of actions are forbidden by their followers such as food that is forbidden or actions that are encouraged like killing for example 
 8. Followers of the cult can lose or gain favor with their god/deity
-9. Headpriests can appoint fellow worshipers as priests
-10. Headpriests and priests can pray to their deity for "miracles" or to put "curses" 
+9. Head priests can appoint fellow worshipers as priests
+10. Head priests and priests can pray to their deity for "miracles" or to put "curses" 
 
-For a better understanding, start reading from this page to be able to visualize the internal object classes:
+This summary, although crude, is the most simplest explanation of the plugin and how it functions. A more in-depth explanation of how the plugin works under the [Basic Usage](#basic-usage) section below.
+
+For a better understanding, start reading from [this](cults/objects.md) page to be able to visualize the internal object classes:
 > See [Objects](cults/objects.md)    
 
 ## Basic Usage
-To create a `Cult` one must first build an [`Altar`](cults/altars.md) which is a multiblock structure consisting of a block, a sign and a candle. Upon right clicking the sign, the plugin searches to make sure that the Deity listed
+To create a `Cult` one must first build an `Altar`. Upon right clicking the sign, the plugin uses a regex-search to make sure that the deity being attempted does not match an existing `Deity` from the database. If the name is too similar or the deity already exists, it will return an error letting the user know what happened.   
 
-## Altars vs Shrines
-### Altar
-An altar is defined as a multi-block structure with three (3) main components:
-1. The altar block - The central piece to the altar
-2. The altar sign - The sign attached to the altar. Has ``[Altar]`` on the first line. Right clicking it creates the altar and allows the player to pray to the altar.
-3. Candles - Light up as a status indicator to show that the altar is properly registered.
+If the cult is successfully created then the `Believer` (or Player) who created the cult automatically becomes the `Head Priest`. Others can join the cult by "praying" at either a `Shrine` or the altar. The head priest can promote these other believers to become priests. The `Priest` and head priest can perform prayers at the altar to grant blessings upon their cult or curses against a group of people.    
 
-Here is an example of an altar:
-![Example of an Altar](../images/altar_example.png)
+In-order to perform these rituals, a good rapport must be built with the deity. To become on good terms with the deity, the cult's believers must "pray" to the Deity (right click the sign) at shrines or altars. As relationship with the deity improves, the head priest can start to put together a `Holy Book`. 
 
-Altars are the core of a Cult as they are the only way to create a cult and only way to perform certain rituals such as sacrifices. Altars are meant to be kept safe as destruction of the Altar triggers a configurable timer that will dissolve the Cult if the Altar is not rebuilt in time. 
+The holy book is a set of "laws" known as `Canon` which are determined through a series of random pre-generated questions that the deity will ask the head priest. The answers given will shape the type of deity for that cult and will define what actions to take that allow a believer to either gain or lose favor.

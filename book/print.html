@@ -2780,6 +2780,9 @@
                         <!-- Page table of contents -->
                         <div class="sidetoc"><nav class="pagetoc"></nav></div>
 
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
                         <h1 id="an-introduction-to-airshipcraft"><a class="header" href="#an-introduction-to-airshipcraft">An Introduction to AirshipCraft</a></h1>
 <blockquote>
 <p>v2.1.0 | 
@@ -3200,33 +3203,159 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <div style="break-before: page; page-break-before: always;"></div><blockquote>
 <p><span style="color:yellow">Currently being developed as of 2023-01-28.</span></p>
 </blockquote>
+<blockquote>
+<p>⚠️ <strong>Warning:</strong> This page is still under construction!</p>
+</blockquote>
 <h1 id="cults"><a class="header" href="#cults">Cults</a></h1>
 <p>The purpose of the cults plugin is to provide another layer to gameplay. By allowing players to be creative in creating these fictious sects and design their own ideologies within the confines of the server, we open up avenues for player creativity and roleplay opportunities. As we have discussed in the introducatory pages of this documentation, increasing player engagement is one of our main goals in designing this project.</p>
 <h2 id="overview-3"><a class="header" href="#overview-3">Overview</a></h2>
-<p>The proposed plan for the cults system has many moving parts to it. This page was written in hopes to clarify the vision for the the plugin and its integration within the project including how it will interact with the other plugins/mechanics of the server. Each feature and mechanic of the plugin will be broken down further in this page.</p>
+<p>The proposed plan for the cults system has many moving parts to it. This page was written in hopes to clarify the vision for the the plugin and its integration within the project including how it will interact with the other plugins/mechanics of the server. Each feature and mechanic of the plugin will be broken down further in this page and subsequent pages within this section.</p>
 <blockquote>
-<p>📝 <strong>Note</strong>: The terms &quot;deity&quot; and &quot;god&quot; are also interchangable and there is no difference between the two terms besides semantics.  God and deity are synonymous. According to their basic definitions, they both represent a supreme power. However, sometimes God as a term is used to represent the only supreme power, whereas deity can be used to refer to any of the forms of this supreme power and thus can be multiple in number. God is generally used in context to male gods, whereas deity can be used to refer to both god and goddess (female god).</p>
+<p>📝 <strong>Note:</strong> The terms &quot;deity&quot; and &quot;god&quot; are also interchangable and there is no difference between the two terms besides semantics.  God and deity are synonymous. According to their basic definitions, they both represent a supreme power. However, sometimes God as a term is used to represent the only supreme power, whereas deity can be used to refer to any of the forms of this supreme power and thus can be multiple in number. God is generally used in context to male gods, whereas deity can be used to refer to both god and goddess (female god).</p>
 </blockquote>
 <p>The following is a quick ten-point summary of the plugin: </p>
 <ol>
-<li>A player creates an altar in-order to pray to a deity. </li>
+<li>A player creates an <a href="mech/cults/altars.html">altar</a> in-order to pray to a deity. </li>
 <li>If the deity doesn't exist then a new religion (cult) is formed and that deity is registered, and the player who created the altar becomes the headpriest for that cult.</li>
 <li>If another player &quot;prays&quot; to that altar and they do not belong to a cult yet, they will join that cult and become a follower of that deity they just prayed to</li>
 <li>A &quot;pantheon&quot; can be created which is essentially a grouping of different cults/deities together. Members within a cult who are also part of a pantheon can pray to other deities within the pantheon.</li>
 <li>The opposite holds true, and cults can label other cults as &quot;enemies&quot; or &quot;heretics&quot; making their deities forbidden to their worshippers</li>
-<li>As time goes on and the cult gains more of a following, headpriests gain more power and can set laws for their religion called &quot;canon&quot;</li>
+<li>As time goes on and the cult gains more of a following, head priests gain more power and can set laws for their religion called &quot;canon&quot;</li>
 <li>Canon laws can include things such as what kind of actions are forbidden by their followers such as food that is forbidden or actions that are encouraged like killing for example </li>
 <li>Followers of the cult can lose or gain favor with their god/deity</li>
-<li>Headpriests can appoint fellow worshipers as priests</li>
-<li>Headpriests and priests can pray to their deity for &quot;miracles&quot; or to put &quot;curses&quot; </li>
+<li>Head priests can appoint fellow worshipers as priests</li>
+<li>Head priests and priests can pray to their deity for &quot;miracles&quot; or to put &quot;curses&quot; </li>
 </ol>
-<p>To get started, we will first cover the hierarchy of objects in the plugin:</p>
+<p>This summary, although crude, is the most simplest explanation of the plugin and how it functions. A more in-depth explanation of how the plugin works under the <a href="mech/cults.html#basic-usage">Basic Usage</a> section below.</p>
+<p>For a better understanding, start reading from <a href="mech/cults/objects.html">this</a> page to be able to visualize the internal object classes:</p>
 <blockquote>
-<p>See </p>
+<p>See <a href="mech/cults/objects.html">Objects</a></p>
 </blockquote>
-<h2 id="altars-vs-shrines"><a class="header" href="#altars-vs-shrines">Altars vs. Shrines</a></h2>
-<p>Shrines and Altars differ significantly in both form and function.</p>
-<h3 id="altars"><a class="header" href="#altars">Altars</a></h3>
+<h2 id="basic-usage"><a class="header" href="#basic-usage">Basic Usage</a></h2>
+<p>To create a <code>Cult</code> one must first build an <code>Altar</code>. Upon right clicking the sign, the plugin uses a regex-search to make sure that the deity being attempted does not match an existing <code>Deity</code> from the database. If the name is too similar or the deity already exists, it will return an error letting the user know what happened.</p>
+<p>If the cult is successfully created then the <code>Believer</code> (or Player) who created the cult automatically becomes the <code>Head Priest</code>. Others can join the cult by &quot;praying&quot; at either a <code>Shrine</code> or the altar. The head priest can promote these other believers to become priests. The <code>Priest</code> and head priest can perform prayers at the altar to grant blessings upon their cult or curses against a group of people.</p>
+<p>In-order to perform these rituals, a good rapport must be built with the deity. To become on good terms with the deity, the cult's believers must &quot;pray&quot; to the Deity (right click the sign) at shrines or altars. As relationship with the deity improves, the head priest can start to put together a <code>Holy Book</code>. </p>
+<p>The holy book is a set of &quot;laws&quot; known as <code>Canon</code> which are determined through a series of random pre-generated questions that the deity will ask the head priest. The answers given will shape the type of deity for that cult and will define what actions to take that allow a believer to either gain or lose favor.</p>
+<div style="break-before: page; page-break-before: always;"></div><blockquote>
+<p>⚠️ <strong>Warning:</strong> This page is still under construction!</p>
+</blockquote>
+<h1 id="objects"><a class="header" href="#objects">Objects</a></h1>
+<p>This page details and outlines the object classes in the plugin as well as attempting to give a detailed explanation of their functionality, both from a programming perspective and an in-game perspective.</p>
+<h2 id="object-hierarchy"><a class="header" href="#object-hierarchy">Object Hierarchy</a></h2>
+<blockquote>
+<p>📝 <strong>Note:</strong> This diagram is mainly just a placeholder for now but should give the general sense of the object-class hierarchy.</p>
+</blockquote>
+<pre><code>          ┌────────┐
+          │Nameable│
+          └───┬────┘
+              │
+              │
+              ▼
+         ┌───────────┐
+         │CultsObject│
+         ├───────────┤
+         ├──────────┼┴───────────┐
+         │          │            │
+         │          │            │
+         │          ▼            │
+         │        ┌────┐         │
+         │        │Cult│         │
+         │        └────┘         │
+         │         ▲ ▲           │
+         ▼         │ │           ▼
+   ┌────────┐      │ │        ┌─────┐
+   │Believer├───┬──┘ └────────┤Deity│
+┌──┴────────┴───┤             └─────┘
+│               │
+│  Believer     │
+│               │
+│  Head Priest  │
+│               │
+│  Priest       │
+│               │
+└───────────────┘
+</code></pre>
+<h3 id="nameable"><a class="header" href="#nameable">Nameable</a></h3>
+<p>A simple interface to show that a class can be named, agnostic if it's a <code>CultsObject</code> or not.</p>
+<pre><code class="language-java">public interface Nameable {
+    /**
+     * Get the name of the specified object
+     * @return A String representing the name of the object.
+     */
+    String getName();
+
+    /**
+     * Gets the formatted name of the object.
+     * @return The formatted name.
+     */
+    default String getFormattedName() {
+        return getName().replace('_', ' ');
+    }
+}
+</code></pre>
+<h3 id="cultsobject"><a class="header" href="#cultsobject">CultsObject</a></h3>
+<p>The <code>CultsObject</code> class is the main class that implements <code>Nameable</code>, all other object classes should extend this one.</p>
+<pre><code class="language-java">public abstract class CultsObject implements Nameable {
+
+    String name;
+    UUID id;
+    protected CultsObject(String name) { 
+        this.name = name; 
+    }
+
+    public void setName(String name) { 
+        this.name = name; 
+    }
+
+    public String getName() { 
+        return name; 
+    }
+
+    public void setId(UUID id) { 
+        this.id = id; 
+    }
+
+    public UUID getId() { 
+        return id; 
+    }
+
+    @Override
+    public String toString() { 
+        return getName(); 
+    }
+}
+</code></pre>
+<h3 id="believer"><a class="header" href="#believer">Believer</a></h3>
+<p>The <code>Believer</code> class is a simple class that extends <code>CultsObject</code> and its main purpose is to register the player as a &quot;believer&quot; entity.</p>
+<pre><code class="language-java">public class Believer extends CultsObject {
+
+    String name;
+
+    protected Believer(String name) { 
+        super(name); 
+    }
+
+    @Override
+    public String getName() { 
+        return name; 
+    }
+
+    @Override
+    public UUID getId() { 
+        return super.getId(); 
+    }
+}
+</code></pre>
+<h3 id="deity"><a class="header" href="#deity">Deity</a></h3>
+<p>The <code>Deity</code> class also extends <code>CultsObject</code>. The purpose of this class is to represnet a &quot;deity/god&quot; entity which is created upon interaction with an <code>Altar</code> for the first time. </p>
+<h3 id="cult"><a class="header" href="#cult">Cult</a></h3>
+<p>Finally we reach the <code>Cult</code> object. A Cult takes a list of <code>Believers</code> as its members, a single <code>Believer</code> as its <code>HeadPriest</code> and a single <code>Diety</code> as it's main deity (agnostic of whether it's part of a <code>Pantheon</code> or not). It also records the coords of its <code>Altar</code> and saves that as its &quot;holy land&quot;.</p>
+<div style="break-before: page; page-break-before: always;"></div><blockquote>
+<p>⚠️ <strong>Warning:</strong> This page is still under construction!</p>
+</blockquote>
+<h1 id="altars"><a class="header" href="#altars">Altars</a></h1>
+<h2 id="overview-4"><a class="header" href="#overview-4">Overview</a></h2>
+<p>Altars are the core of a <code>Cult</code> as they are the only way to create a cult and only way to perform certain rituals such as <code>Sacrifices</code>. Altars are meant to be kept safe since destruction of the <code>Altar</code> triggers a configurable timer that will dissolve the <code>Cult</code> if the <code>Altar</code> is not rebuilt in time.</p>
 <p>An altar is defined as a multi-block structure with three (3) main components:</p>
 <ol>
 <li>The altar block - The central piece to the altar</li>
@@ -3234,17 +3363,14 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>Candles - Light up as a status indicator to show that the altar is properly registered.</li>
 </ol>
 <p>Here is an example of an altar:
-<img src="mech/../images/altar_example.png" alt="Example of an Altar" /></p>
-<p>Altars are the core of a Cult. </p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="objects"><a class="header" href="#objects">Objects</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="altars-1"><a class="header" href="#altars-1">Altars</a></h1>
+<img src="mech/cults/../../images/altar_example.png" alt="Example of an Altar" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="shrines"><a class="header" href="#shrines">Shrines</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><blockquote>
 <p><span style="color:red">Currently unimplemented.</span></p>
 </blockquote>
 <h1 id="nodes"><a class="header" href="#nodes">Nodes</a></h1>
 <p>The nodes system is a claim system that essentially combines aspects from Towny and a plugin called Nodes by <a href="https://github.com/phonon/minecraft-nodes">phonon</a> (See his documentation for it <a href="https://nodes.soy/4-1-territories.html">here</a> for a better overview of what it does, I will be summarizing most of it here). We will be working off the fork by <a href="https://github.com/crusalis/multi-nodes/tree/master/nodes/src/main/kotlin/phonon/nodes">crusallis</a> as it's more updated.</p>
-<h2 id="overview-4"><a class="header" href="#overview-4">Overview</a></h2>
+<h2 id="overview-5"><a class="header" href="#overview-5">Overview</a></h2>
 <p>The nodes system can be summarized below in seven main points:</p>
 <ol>
 <li>Map segmented into pre-created territories which are groups of contiguous Minecraft chunks.</li>
