@@ -3,7 +3,7 @@
 The purpose of the cults plugin is to provide another layer to gameplay. By allowing players to be creative in creating these fictious sects and design their own ideologies within the confines of the server, we open up avenues for player creativity and roleplay opportunities. As we have discussed in the introducatory pages of this documentation, increasing player engagement is one of our main goals in designing this project.
 
 ## Overview
-The proposed plan for the cults system has many moving parts to it. This page was written in hopes to clarify the vision for the the plugin and its integration within the project including how it will interact with the other plugins/mechanics of the server. Each feature and mechanic of the plugin will be broken down further in this page.    
+The proposed plan for the cults system has many moving parts to it. This page was written in hopes to clarify the vision for the the plugin and its integration within the project including how it will interact with the other plugins/mechanics of the server. Each feature and mechanic of the plugin will be broken down further in this page and subsequent pages within this section.    
 
  
 > 📝 **Note**: The terms "deity" and "god" are also interchangable and there is no difference between the two terms besides semantics.  God and deity are synonymous. According to their basic definitions, they both represent a supreme power. However, sometimes God as a term is used to represent the only supreme power, whereas deity can be used to refer to any of the forms of this supreme power and thus can be multiple in number. God is generally used in context to male gods, whereas deity can be used to refer to both god and goddess (female god).   
@@ -20,8 +20,8 @@ The following is a quick ten-point summary of the plugin:
 9. Headpriests can appoint fellow worshipers as priests
 10. Headpriests and priests can pray to their deity for "miracles" or to put "curses" 
 
-To get started, we will first cover the hierarchy of objects in the plugin:
-> See 
+For a better understanding, start reading from this page to be able to visualize the internal object classes:
+> See [Objects](cults/objects.md)    
 
 ## Altars vs. Shrines
 Shrines and Altars differ significantly in both form and function.
@@ -34,4 +34,4 @@ An altar is defined as a multi-block structure with three (3) main components:
 Here is an example of an altar:
 ![Example of an Altar](../images/altar_example.png)
 
-Altars are the core of a Cult. 
+Altars are the core of a Cult as they are the only way to create a cult and only way to perform certain rituals such as sacrifices. Altars are meant to be kept safe as destruction of the Altar triggers a configurable timer that will dissolve the Cult if the Altar is not rebuilt in time. 
