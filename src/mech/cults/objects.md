@@ -118,5 +118,7 @@ public class Believer extends CultsObject {
 The `Deity` class also extends `CultsObject`. The purpose of this class is to represnet a "deity/god" entity which is created upon interaction with an `Altar` for the first time. 
 
 ### Cult
-Finally we reach the `Cult` object. A Cult takes a list of `Believers` as its members, a single `Believer` as its `HeadPriest` and a single `Diety` as it's main deity (agnostic of whether it's part of a `Pantheon` or not). It also records the coords of its `Altar` and saves that as its "holy land".
+Finally we reach the `Cult` object. A cult takes a list of `Believers` as its members, a single `Believer` as its `Head Priest` and a single `Diety` as it's main deity (agnostic of whether it's part of a `Pantheon` or not). Believers can be promoted to `Priest` which functions as a sort of "officer" or moderator of the cult. It also records the coords of its `Altar` and saves that as its "holy land".
 
+### Holy Land
+The `Holy Land` is the chunk containing the `Altar`. This creates a geographical "home" for the cult. This is to help track a series of cult-specific events such as but not limited to a `Sacrafice`.
