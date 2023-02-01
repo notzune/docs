@@ -27,15 +27,14 @@
 - [Skills](mech/skills.md)
 - [Cults](mech/cults.md)
   - [Objects](mech/cults/objects.md)
+  - [Configuration](mech/cults/config.md)
   - [Altars](mech/cults/altars.md)
   - [Shrines](mech/cults/shrines.md)
   
 - [Nodes](mech/nodes.md)
   - [Territories](mech/nodes/territories.md)
   - [Prefer Handles over IDs](mech/nodes/handles-over-ids.md)
-  
-- [Claiming System](mech/nation-system.md)
-  - [Objects](mech/nations/objects.md)
+  - [Claiming System](mech/nodes/nation-system.md)
   
 - [Quests](mech/quests.md)
 
@@ -49,6 +48,6 @@
   - [Phase 1](administration/timeline/phase-1.md)
 # Misc
 - [Lore](misc/lore.md)
-- [Stats](misc/playerstats.md)
+- [PlayerStats](misc/playerstats.md)
 
 [Contributions](misc/contributions.md)

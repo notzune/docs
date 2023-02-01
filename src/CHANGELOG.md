@@ -27,16 +27,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - [Cults](mech/cults.md) page.
     - Explanation of [cult objects](mech/cults/objects.md)
     - Breakdown of [Altars](mech/cults/altars.md)
-
+  - [Player Stats](misc/playerstats.md) page and diagram.
 ### Changed
 - Docs
   - Changed structure of the table of contents
     - Moved the Map section underneath the Mechanics section as it made more sense
-  - Moved "Lore" page to no longer be nested underneath the Map section and instead moved under Misc.
+    - Moved "Lore" page to no longer be nested underneath the Map section and instead moved under Misc.
+    - Moved "Claiming System" page to be nested under Nodes instead of its own section as it makes more sense
   - Updated footer on first page
   - Fixed various small formatting errors 
 
 ### Removed
+- Docs
+  - Removed Nation Objects page as it isn't necessary
+  
 ## [v2.1.0] - 2023-1-2 - 2023-1-23
 ### Added 
 - Web
