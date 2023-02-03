@@ -43,11 +43,15 @@
 - [City States](map/cities.md)
 - [Map Overview](map/mapoverview.md)
 
+# Core
+- [ACCommonLib](core/common-lib.md)
+- [PlayerStats](core/playerstats.md)
+
 # Administration
+- [Housekeeping](administration/housekeeping.md)
 - [Project Timeline](administration/project-timeline.md)
   - [Phase 1](administration/timeline/phase-1.md)
 # Misc
 - [Lore](misc/lore.md)
-- [PlayerStats](misc/playerstats.md)
 
 [Contributions](misc/contributions.md)
