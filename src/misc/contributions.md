@@ -10,7 +10,7 @@ This page contains a list of all of the kind and amazing people who have contrib
 [Towny](https://github.com/TownyAdvanced)    
 [LlmDl](https://github.com/LlmDl)
 #### Nodes
-[**phonon**](https://github.com/phonon) - Territories/node system    
+[**phonon**](https://github.com/phonon)   
 [multi-nodes](https://github.com/crusalis/multi-nodes)
 
 ## Web:
@@ -28,5 +28,9 @@ This page contains a list of all of the kind and amazing people who have contrib
     
 **zem** - Owner and creator of the map who also spent New Years Eve uploading the entire ~17GB file to the server directly via FTP since the download wasn't working for me.   
 
-### Port Xile:
-**Renzy_671** - Did a lot. 
+### Builders:
+**Renzy_671**   
+**Nezuika**   
+**Passbuilds**   
+**SupremeNoob**   
+**RADGALF_BITGALF**   

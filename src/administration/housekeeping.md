@@ -13,3 +13,6 @@ This page goes over some basic housekeeping rules in-order to maintain efficienc
 > *Taken from a [Dev.to](https://dev.to/github/how-to-prevent-merge-conflicts-or-at-least-have-less-of-them-109p).*
    
 This can be extremely frustrating especially on a project such as this when there will be times where more than one person may be working on a specific piece of code. 
+
+Luckily we can take several steps to prevent this from happening: 
+### Standardization of Formatting

@@ -42,6 +42,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Moved "PlayerStats" to the core section as it makes more sense
   - Updated footer on first page
   - Fixed various small formatting errors 
+  - Updated [contributions](misc/contributions.md) page
 
 ### Removed
 - Docs
