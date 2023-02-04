@@ -30,7 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - [Player Stats](misc/playerstats.md) page and diagram.
   - Added a [project timeline](administration/project-timeline.md) and associated pages:
     - [Phase 1](administration/timeline/phase-1.md)
-    - [Housekeeping](administration/housekeeping.md) is meant as a guideline to keep code uniform and encourage best practices to keep the project organized.
+    - [Housekeeping](administration/housekeeping.md) is meant to serve as a guideline to keep code uniform and encourage best practices to keep the project organized.
   - Added a "Core" section discussing the core components that make up the backbone of the project
     - [Common Library](core/common-lib.md) page outlining the framework and its functionality
 ### Changed
