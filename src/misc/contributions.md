@@ -14,10 +14,13 @@ This page contains a list of all of the kind and amazing people who have contrib
 [multi-nodes](https://github.com/crusalis/multi-nodes)
 
 ## Web:
+### Discord:
+[**InspectorPacket**](https://github.com/inspector-packet)
 ### Homepage:
 ["Eventually" by HTML5UP](https://html5up.net/eventually#:~:text=Eventually%20%7C%20HTML5%20UP%20Eventually%20A%20simple%20template,big%20thing.%20Brought%20to%20you%20by%20HTML5%20UP.)   
 
 ### Documentation: 
+**AimNotBrain**
 [**phonon**](https://github.com/phonon)   
 [mdbook](https://rust-lang.github.io/mdBook/)    
 [mdbook-theme](https://github.com/zjp-CN/mdbook-theme)    
