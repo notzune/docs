@@ -2817,10 +2817,10 @@
 </blockquote>
 <h1 id="altars"><a class="header" href="#altars">Altars</a></h1>
 <h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
-<p>Altars are the core of a <code>Cult</code> as they are the only way to create a cult and only way to perform certain rituals such as <code>Sacrifices</code>. Altars are meant to be kept safe since destruction of the <code>Altar</code> triggers a configurable timer that will dissolve the <code>Cult</code> if the <code>Altar</code> is not rebuilt in time.</p>
+<p>Altars are the core of a <code>Cult</code> as they are the only way to create a cult and the only way to perform certain rituals such as <code>Sacrifices</code>. Altars are meant to be kept safe since t he destruction of an <code>Altar</code> triggers a configurable timer that will dissolve the <code>Cult</code> if the <code>Altar</code> is not rebuilt in time.</p>
 <p>An altar is defined as a multi-block structure with three (3) main components:</p>
 <ol>
-<li>The altar block - The central piece to the altar</li>
+<li>The altar block - The central piece to the altar.</li>
 <li>The altar sign - The sign attached to the altar. Has <code>[Altar]</code> on the first line. Right clicking it creates the altar and allows the player to pray to the altar.</li>
 <li>Candles - Light up as a status indicator to show that the altar is properly registered.</li>
 </ol>
@@ -2828,13 +2828,13 @@
 <img src="../../images/altar_example.png" alt="Example of an Altar" /></p>
 <p>Altars are contained within a <code>Holy Site</code> which is the chunk that is defined upon the registration of an altar.</p>
 <blockquote>
-<p>📝 <strong>Note:</strong> The terms <code>Holy Site</code> and <code>Holy Land</code> may be used interchangeably as they are defined as essentially the same thing, the only difference is that the <code>Site</code> refers to the <code>Altar Block</code> in specific while the <code>Land</code> refers to it's encompassing chunk in general.</p>
+<p>📝 <strong>Note:</strong> The terms <code>Holy Site</code> and <code>Holy Land</code> may be used interchangeably as they are defined as essentially the same thing. The only difference is that the <code>Site</code> specifically refers to the <code>Altar Block</code> while the <code>Land</code> refers to it's encompassing chunk in general.</p>
 </blockquote>
 <h2 id="usage"><a class="header" href="#usage">Usage</a></h2>
 <p>The altar, as stated previously, serves as a marker for where and when the <code>Cult</code> was registered/formed and is the primary and direct connection between a <code>Believer</code> and a <code>Deity</code>.</p>
 <p>Altars have some functionality outside of being &quot;prayer sites&quot; as they can also function similar to the vanilla beacon, giving buffs to believers within a radius of the holy site.</p>
-<p>Altars will also give a base modifier when calculating reputation change of a believer and their respective deity. The current modifier is <code>1.5x</code> but can be upgraded as the cult grows and more unique believers visit the altar.</p>
-<p>An <code>Offering</code> is an item that a player &quot;sacrifices&quot; to the altar by right-clicking the altar sign with an item in hand. A configurable list of items with their &quot;value&quot; can be found within the <a href="config.html">config</a>. The plugin makes a distinction between valuable/desireable items and undisreable items by assigning positive and negative values to the items. These values are then multiplied by whatever modifiers might be in effect in-order to calculate the gain or loss of reputation within a transaction.</p>
+<p>Altars will also give a base modifier when calculating the reputation change of a believer and their respective deity. The current modifier is <code>1.5x</code> but can be upgraded as the cult grows and more unique believers visit the altar.</p>
+<p>An <code>Offering</code> is an item that a player &quot;sacrifices&quot; to the altar by right-clicking the altar sign with an item in hand. A configurable list of items with their &quot;value&quot; can be found within the <a href="config.html">config</a>. The plugin makes a distinction between valuable/ desireable items and undesireable items by assigning positive and negative values to the items. These values are then multiplied by whatever modifiers might be in effect in order to calculate the gain or loss of reputation within a transaction.</p>
 
                     </main>
 

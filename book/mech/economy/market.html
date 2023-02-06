@@ -2816,33 +2816,33 @@
 <p><span style="color:red">Currently unimplemented.</span></p>
 </blockquote>
 <h1 id="market"><a class="header" href="#market">Market</a></h1>
-<p>The market system is one of the key features of the entire project as it serves as the backbone to the economy. Caution must be used when designing, discussing, or working on features of the economy in general and the market system in particular. Measures need to be taken to ensure the system can not be gamed or atleast the gaming of the system would be kept to a minimum. With a proper dynamic economy we can avoid players finding METAs that break the economy.</p>
+<p>The market system is one of the key features of the entire project as it serves as the backbone of the economy. Caution must be used when designing, discussing, or working on features of the economy in general and the market system in particular. Measures need to be taken to ensure the system can not be gamed or at least the gaming of the system will be kept to a minimum. With a proper dynamic economy, we can avoid players finding METAs that break the economy.</p>
 <h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
 <p>There will be two parts to the market. The <strong>global</strong> and the <strong>local</strong> market. </p>
-<p>The <strong>global market</strong> determines things on a server-wide scale such as price ceiling to set the default cost of items put on sale on the market if not specificed by the user. It also creates an index on the webserver as a reference for players to be able to see a <a href="economy/spreadsheet.html">spreadsheet</a> of the current market prices of items. The global market is meant to be a guideline to build the local markets but should not be limiting to the end user in any real way.</p>
-<p>The <strong>local market</strong> determines prices and sale of goods on a <a href="../../map/regions.html">region</a> basis. Much like the <strong>global market</strong>, the local market sets priece ceilings on items and uses the global market prices to set the maximum initial price on items. The local market also records how many unique vendors sell a certain item in that region and inversely raises the price ceiling to allow players a chance to be able to corner the market in that specific region.</p>
+<p>The <strong>global market</strong> determines things on a server-wide scale, such as a price ceiling to set the default cost of items put on sale on the market if not specified by the user. It also creates an index on the webserver as a reference for players to be able to see a <a href="economy/spreadsheet.html">spreadsheet</a> of the current market prices of items. The global market is meant to be a guideline to building the local markets but should not be limited to the end user in any real way.</p>
+<p>The <strong>local market</strong> determines the prices and sale of goods on a <a href="../../map/regions.html">region</a> basis. Much like the <strong>global market</strong>, the local market sets price ceilings on items and uses the global market prices to set the maximum initial price on items. The local market also records how many unique vendors sell a certain item in that region and inversely raises the price ceiling to allow players a chance to be able to corner the market in that specific region.</p>
 <h2 id="the-global-market"><a class="header" href="#the-global-market">The Global Market</a></h2>
-<p>The <strong>glohal market</strong> monitors the <strong>supply</strong> of items server-wide. Supply is the amount of items submitted to chests connected to a vendor/merchant <a href="npcs/types/merchants.html">NPC</a>. This keeps track of the <strong>global supply</strong> of items. As the supply increases the global price cap lowers which in turn will lower the global default initial pricing of items. </p>
-<p>An initial price point is required as due to the hyperbolic formula used in determining the dynamic market prices, it would be impossible to buy any item if it reaches 0.</p>
+<p>The <strong>global market</strong> monitors the <strong>supply</strong> of items server-wide. Supply is the number of items submitted to chests connected to a vendor/merchant <a href="NPCs/types/merchants.html">NPC</a>. This keeps track of the <strong>global supply</strong> of items. As the supply increases, the global price cap lowers, which in turn will lower the global default initial pricing of items. </p>
+<p>An initial price point is required due to the hyperbolic formula used in determining dynamic market prices. It would be impossible to buy any item if it reaches 0.</p>
 <h3 id="inflation"><a class="header" href="#inflation">Inflation</a></h3>
-<p>The initial price point (after it is first configured by an Administrator via configuration file) is effected by in-game inflation rates using the formula:</p>
+<p>The initial price point (after it is first configured by an Administrator via the configuration file) is affected by in-game inflation rates using the formula:</p>
 <p><code>R = ((B - A)/A) x 100</code></p>
 <blockquote>
 <p>Where A = starting cost; B = ending cost; R = inflation rate</p>
 </blockquote>
-<p>How it works is it takes the pre-configured initial price point for an item (B) and after a month(?) compares it with the mean price point of that specific item across all of the registered local markets (A). The resulting rate (R) is then subtracted from the starting price point (A) and the new market month begins.</p>
+<p>How it works: It takes the pre-configured initial price point for an item (B) and after a month(?) compares it with the mean price point of that specific item across all of the registered local markets (A). The resulting rate (R) is then subtracted from the starting price point (A) and the new market month begins.</p>
 <h2 id="the-local-market-per-region-markets"><a class="header" href="#the-local-market-per-region-markets">The Local Market (Per-region Markets)</a></h2>
-<p>The <strong>local market</strong> is where the real interesting part begins. The local market, like the <strong>global market</strong> sets an initial price on items based on two factors:</p>
+<p>The <strong>local market</strong> is where the really interesting part begins. The local market, like the <strong>global market</strong> sets an initial price on items based on two factors:</p>
 <p>The first factor is the global market's initial price. The local market's initial price cap should always either equal or be less than the global market's. </p>
 <p>By default, all items start in initial pricing mode. Initial pricing is a temporary price cap or ceiling that keeps prices low until a reasonable amount of the item has been sold to the shop. The price of an item will not change while it is in dynamic pricing mode.</p>
 <p>Due to the nature of the pricing formula, an item with 0 stock has an infinite sell value when in dynamic pricing mode. Initial pricing is there to fix this issue. Tradeable objects will automatically switch to dynamic pricing mode whenever the dynamic price is less than the initial price. </p>
 <h2 id="dynamic-pricing"><a class="header" href="#dynamic-pricing">Dynamic Pricing</a></h2>
-<p>The main purpose of this economy system is to allow for dynamic price changes in the server's economy in-order to stay away from stagnant gameplay and force players to constantly have to adapt to market prices instead of abusing a singular trading META.</p>
+<p>The main purpose of this economic system is to allow for dynamic price changes in the server's economy in order to prevent stagnant gameplay and force players to constantly adapt to market prices instead of abusing a singular trading META.</p>
 <p>Dynamic pricing mode will automatically be activated for all items once they reach a certain stock level. Once in dynamic mode, the price of the item will vary depending on how much stock is available for that item.</p>
 <p>As the stock approaches 0, the price will approach infinity, and as the stock approaches infinity, the price will approach 0. This means that it is essentially impossible to purchase the final item in a shop whenever it is in dynamic pricing mode. The pricing formula is as follows: </p>
 <p><code>price = (median * value) / stock.</code> </p>
 <h2 id="taxation"><a class="header" href="#taxation">Taxation</a></h2>
-<p>This economy system shall allow for different forms of taxation. Taxes, by default, are deposited into the region bank account unless an eligible bank account is found. </p>
+<p>This economic system will allow for different forms of taxation. Taxes, by default, are deposited into the region's bank account unless an eligible bank account is found. </p>
 <pre><code>         ┌───────────────┐
          │Collected Taxes│
          └──────┬────────┘
@@ -2876,15 +2876,15 @@
 <blockquote>
 <p>📝 <strong>Note:</strong> Here is a chart showing the priority hierarchy of where the taxes are deposited.</p>
 </blockquote>
-<p>Tax rates default to whatever is defined in the <code>config.yml</code> to be the &quot;global tax rate&quot; but if a shop is within the territory of a town or nation and they have set their tax rate then it will use that rate instead. If both the town AND nation have set a tax rate it will take the average of both numbers.</p>
+<p>Tax rates default to whatever is defined in the <code>config.yml</code> to be the &quot;global tax rate&quot;, but if a shop is within the territory of a town or nation and they have set its tax rate, then it will use that rate instead. If both the town and the nation set a tax rate, it would take the average of both numbers.</p>
 <h3 id="purchase-tax"><a class="header" href="#purchase-tax">Purchase Tax</a></h3>
-<p>Purchase tax is applied when items are purchased in dynamic pricing mode. If the tax rate were 3%, the tax charged for the purchase will be 3% of the purchase price.</p>
+<p>Purchase tax is applied when items are purchased in dynamic pricing mode. If the tax rate were 3%, the tax charged for the purchase would be 3% of the purchase price.</p>
 <h3 id="initial-tax"><a class="header" href="#initial-tax">Initial Tax</a></h3>
-<p>Initial tax is applied when items are purchased in initial pricing mode. It works just like purchase tax.</p>
+<p>Initial tax is applied when items are purchased in initial pricing mode. It works just like a purchase tax.</p>
 <h3 id="enchantment-tax"><a class="header" href="#enchantment-tax">Enchantment Tax</a></h3>
 <p>Enchantment tax is applied when enchantments are purchased. Enchantment tax will apply to all enchantments unless they are in static pricing mode.</p>
 <h3 id="dynamic-sales-tax"><a class="header" href="#dynamic-sales-tax">Dynamic Sales Tax</a></h3>
-<p>Allows poor players to make more money during sales than rich players. Dynamic tax will only be applied when the player's balance is between the money-floor and money-cap defined in config.yml. The maximum tax rate defined in config.yml will be applied when the player's balance is equal to or greater than the money-cap. If the max tax is set to 100 percent the player will no longer make money when selling items to a server shop. At the money floor no tax will be applied. Between the cap and floor, the tax rate will gradually increase as the player's balance approaches the money cap.</p>
+<p>It allows poor players to make more money during sales than rich players. Dynamic tax will only be applied when the player's balance is between the money-floor and the money-cap defined in config.yml. The maximum tax rate defined in config.yml will be applied when the player's balance is equal to or greater than the money-cap. If the max tax is set to 100 percent the player will no longer make money when selling items to a server shop. At the money floor, no tax will be applied. Between the cap and floor, the tax rate will gradually increase as the player's balance approaches the money cap.</p>
 <blockquote>
 <p>See also <a href="banking.html">banking</a>, and the <a href="../nation-system.html">nation system</a></p>
 </blockquote>

@@ -2816,7 +2816,7 @@
 <p>⚠️ <strong>Warning:</strong> This page is still under construction!</p>
 </blockquote>
 <h1 id="objects"><a class="header" href="#objects">Objects</a></h1>
-<p>This page details and outlines the object classes in the plugin as well as attempting to give a detailed explanation of their functionality, both from a programming perspective and an in-game perspective.</p>
+<p>This page details and outlines the object classes in the plugin, attempting to give a detailed explanation of their functionality, both from a programming perspective and an in-game perspective.</p>
 <h2 id="object-hierarchy"><a class="header" href="#object-hierarchy">Object Hierarchy</a></h2>
 <blockquote>
 <p>📝 <strong>Note:</strong> This diagram is mainly just a placeholder for now but should give the general sense of the object-class hierarchy.</p>
@@ -2923,11 +2923,11 @@
 }
 </code></pre>
 <h3 id="deity"><a class="header" href="#deity">Deity</a></h3>
-<p>The <code>Deity</code> class also extends <code>CultsObject</code>. The purpose of this class is to represnet a &quot;deity/god&quot; entity which is created upon interaction with an <code>Altar</code> for the first time. </p>
+<p>The <code>Deity</code> class also extends <code>CultsObject</code>. The purpose of this class is to represent a &quot;deity/god&quot; entity which is created upon interaction with an <code>Altar</code> for the first time. </p>
 <h3 id="cult"><a class="header" href="#cult">Cult</a></h3>
-<p>Finally we reach the <code>Cult</code> object. A cult takes a list of <code>Believers</code> as its members, a single <code>Believer</code> as its <code>Head Priest</code> and a single <code>Diety</code> as it's main deity (agnostic of whether it's part of a <code>Pantheon</code> or not). Believers can be promoted to <code>Priest</code> which functions as a sort of &quot;officer&quot; or moderator of the cult. It also records the coords of its <code>Altar</code> and saves that as its &quot;holy land&quot;.</p>
+<p>Finally, we reach the <code>Cult</code> object. A cult takes a list of <code>Believers</code> as its members, a single <code>Believer</code> as its <code>Head Priest</code> and a single <code>Diety</code> as it's main deity (agnostic of whether it's part of a <code>Pantheon</code> or not). Believers can be promoted to <code>Priest</code>, which functions as a sort of &quot;officer&quot; or moderator of the cult. It also records the coords of its <code>Altar</code> and saves that as its &quot;holy land&quot;.</p>
 <h3 id="holy-land"><a class="header" href="#holy-land">Holy Land</a></h3>
-<p>The <code>Holy Land</code> is the chunk containing the <code>Altar</code>. This creates a geographical &quot;home&quot; for the cult. This is to help track a series of cult-specific events such as but not limited to a <code>Sacrafice</code>.</p>
+<p>The <code>Holy Land</code> is the chunk containing the <code>Altar</code>. This creates a geographical &quot;home&quot; for the cult. This is to help track a series of cult-specific events, such as but not limited to a <code>Sacrafice</code>.</p>
 
                     </main>
 

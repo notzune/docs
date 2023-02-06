@@ -2813,14 +2813,19 @@
                         <div class="sidetoc"><nav class="pagetoc"></nav></div>
 
                         <h1 id="housekeeping-rules"><a class="header" href="#housekeeping-rules">Housekeeping Rules</a></h1>
-<p>This page goes over some basic housekeeping rules in-order to maintain efficiency and organization within the project as well as instating some general guidelines about maintaining, contributing to, and using the project.</p>
+<p>This page goes over some basic housekeeping rules in order to maintain efficiency and organization within the project, as well as instating some general guidelines about maintaining, contributing to, and using the project.</p>
 <h2 id="merge-conflicts-and-prevention"><a class="header" href="#merge-conflicts-and-prevention">Merge Conflicts and Prevention</a></h2>
 <blockquote>
-<p>Version control systems, like git, auto-magically manage code contributions. It identifies the change, when it occurred, who made it, and on what line so that developers can easily track the history of their codebase. However, git sometimes gets confused in the following situations:</p>
+<p>Version control systems (like git) automagically manage code contributions. It identifies the change, when it occurred, who made it, and on what line, so that developers can easily track the history of their codebase. However, git sometimes gets confused in the following situations:</p>
 <ul>
-<li>When more than one person changes the same line in a file and tries to merge the change to the same branch.</li>
+<li>When more than one person changes the same line in a file and tries to merge the change to the same branch.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream</li>
 <li>When a developer deletes a file, but another developer edits it, and they both try to merge their changes to the same branch.</li>
-<li>When a developer deletes a line, but another developer edits it, and they both try to merge their changes to the same branch.</li>
+<li>When a developer deletes a line, but another developer edits it, and they both try to merge their changes to the same branch.
+=======</li>
+<li>When a developer deletes a file but another developer edits it, and they both try to merge their changes to the same branch.</li>
+<li>When a developer deletes a line but another developer edits it, and they both try to merge their changes to the same branch.
+&gt;&gt;&gt;&gt;&gt;&gt; Stashed changes</li>
 <li>When a developer is cherry-picking a commit, which is the act of picking a commit from a branch and applying it to another.</li>
 <li>When a developer is rebasing a branch, which is the process of moving a sequence of commits to a base commit.</li>
 </ul>
@@ -2829,9 +2834,12 @@
 <p>This can be extremely frustrating, especially on a project such as this when there will be times where more than one person may be working on a specific piece of code. </p>
 <p>Luckily we can take several steps to prevent this from happening: </p>
 <h3 id="standardization-of-formatting"><a class="header" href="#standardization-of-formatting">Standardization of Formatting</a></h3>
-<p>When developing in Java, many developers have different styles of coding. Inorder to standardize, here are some guidelines that you should try and follow to keep the code uniform and to prevent preventable merged conflicts on PRs:</p>
+<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream
+When developing in Java, many developers have different styles of coding. Inorder to standardize, here are some guidelines that you should try and follow to keep the code uniform and to prevent preventable merged conflicts on PRs:</h1>
+<p>When developing in Java, many developers have different styles of coding. In order to standardize, here are some guidelines that you should try and follow to keep the code uniform and to prevent preventable merged conflicts with PRs: 
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; Stashed changes</p>
 <h4 id="whitespaces"><a class="header" href="#whitespaces"><strong>Whitespaces</strong></a></h4>
-<p>This is a big one. Make sure there is a white space between each new method such as:</p>
+<p>This is a big one. Make sure there is a white space between each new method, such as:</p>
 <pre><code class="language-java">public class Example {
     // whitespace
     public Example() {
