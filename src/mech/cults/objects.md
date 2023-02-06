@@ -1,6 +1,6 @@
 > ⚠️ **Warning:** This page is still under construction!
 # Objects
-This page details and outlines the object classes in the plugin, attempting to give a detailed explanation of their functionality, both from a programming perspective and an in-game perspective.
+This page details and outlines the object classes in the plugin as well as attempting to give a detailed explanation of their functionality, both from a programming perspective and an in-game perspective.
 
 ## Object Hierarchy
 > 📝 **Note:** This diagram is mainly just a placeholder for now but should give the general sense of the object-class hierarchy.
@@ -115,10 +115,10 @@ public class Believer extends CultsObject {
 }
 ```
 ### Deity
-The `Deity` class also extends `CultsObject`. The purpose of this class is to represent a "deity/god" entity which is created upon interaction with an `Altar` for the first time. 
+The `Deity` class also extends `CultsObject`. The purpose of this class is to represnet a "deity/god" entity which is created upon interaction with an `Altar` for the first time. 
 
 ### Cult
-Finally, we reach the `Cult` object. A cult takes a list of `Believers` as its members, a single `Believer` as its `Head Priest` and a single `Diety` as it's main deity (agnostic of whether it's part of a `Pantheon` or not). Believers can be promoted to `Priest`, which functions as a sort of "officer" or moderator of the cult. It also records the coords of its `Altar` and saves that as its "holy land".
+Finally we reach the `Cult` object. A cult takes a list of `Believers` as its members, a single `Believer` as its `Head Priest` and a single `Diety` as it's main deity (agnostic of whether it's part of a `Pantheon` or not). Believers can be promoted to `Priest` which functions as a sort of "officer" or moderator of the cult. It also records the coords of its `Altar` and saves that as its "holy land".
 
 ### Holy Land
-The `Holy Land` is the chunk containing the `Altar`. This creates a geographical "home" for the cult. This is to help track a series of cult-specific events, such as but not limited to a `Sacrafice`.
+The `Holy Land` is the chunk containing the `Altar`. This creates a geographical "home" for the cult. This is to help track a series of cult-specific events such as but not limited to a `Sacrafice`.

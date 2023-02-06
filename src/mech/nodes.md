@@ -1,34 +1,34 @@
 > <span style="color:red">Currently unimplemented.</span>
 # Nodes
 
-The nodes system is a claim system that essentially combines aspects of Towny and a plugin called, "Nodes" by [phonon](https://github.com/phonon/minecraft-nodes) (See his documentation for it [here](https://nodes.soy/4-1-territories.html) for a better overview of what it does, I will be summarizing most of it here). We will be working off the fork by [crusallis](https://github.com/crusalis/multi-nodes/tree/master/nodes/src/main/kotlin/phonon/nodes) as it's more updated.
+The nodes system is a claim system that essentially combines aspects from Towny and a plugin called Nodes by [phonon](https://github.com/phonon/minecraft-nodes) (See his documentation for it [here](https://nodes.soy/4-1-territories.html) for a better overview of what it does, I will be summarizing most of it here). We will be working off the fork by [crusallis](https://github.com/crusalis/multi-nodes/tree/master/nodes/src/main/kotlin/phonon/nodes) as it's more updated.
 
 ## Overview 
 The nodes system can be summarized below in seven main points:
 
-1. The map is segmented into pre-created territories which are groups of contiguous Minecraft chunks.
+1. Map segmented into pre-created territories which are groups of contiguous Minecraft chunks.
 2. Territories have different resource nodes which provide different resource yields from mining and different rates for farming, animal breeding, etc...
 3. Players form a town which controls territories. Initial territory claims must be connected.
-4. War is capturing territory from another town.
-5. Towns choose 1 territory to be their capital, which cannot be taken until all other territories are captured.
-6. A resource chest can be built in the capital which will periodically spawn some resources dependent on the resource yield for that territory.
-7. A captured territory is occupied and provides resource benefits for the occupier. The occupier has the option to annex territory and add it to their town.
+4. War is capturing territories from another town.
+5. Towns choose 1 territory to be their capital which cannot be taken until all other territories are captured.
+6. A resource chest can be built in the capital which will periodically spawn in some resources dependandant on the resource yield for that territory.
+7. A captured territory is occupied and provides resource benefits to the occupier. The occupier has the option to annex a territory and add it to their town.
 
 ### How is this better than Towny?
-Towny doesn't offer much in terms of any resource/economic differentiation between towns, so there's no economy or trade and a lack of justification for waging war. With this resource node system, we aim to change that by giving incentives for players to be strategic about what land they decide to conquer, where they choose to settle, and how they conduct themselves diplomatically (such as by building or breaking trade relations with other nations).
+Towny doesn't offer much in terms of any resource/economic differentiation between towns so theres no economy or trade and lack of justification for waging war. With this resource node system we aim to change that by giving incentives for players to be strategic about what land they decide to conquer, where they choose to settle, and how they conduct themselves diplomatically (such as by building or breaking trade relations with other nations).
 
 ## Territories
 
-As opposed to Towny's basic land unit being the "Townblock", the Node's system uses "Territories".
+As opposed to Towny's basic land unit being the "Townblock", the Node's system uses "Territories"
 
 - Territories have unique resources.
-- Towns have "power", which are points they spend on claiming territories
-- Each territory has a different "power" cost that a town must pay in order to claim.
+- Towns have "power" which are points they spend to claim territories
+- Each territory has a different "power" cost that a Town must pay in-order to claim.
 - A territory's power cost depends on its size and resources
 - More players in a town increases the town's power.
-- Each player's power contribution to their town increases over playtime (to a maximum value)
+- Each player's power contribution to their town increases over play time (to a maximum value)
 
-The territories will also have a web editor that hooks into dynmap in order to better map out where the territories should go using JSON objects.
+The territories will also have a web-editor that hooks into dynmap in-order to better map out where the territories should go using JSON objects.
 
 > See [Territories](nodes/territories.md)
 
@@ -160,7 +160,7 @@ This has no in-game behavior, this is purely for web editor/viewer.
 **Format**: `"priority": Number`
 
 This is order that resource node properties are applied to a territory.
-Lower priority resource nodes are applied first.
+Lower priority resource nodes are applied first
 
 
 ### cost (required)

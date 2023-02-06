@@ -4,7 +4,9 @@
 > `Territory` pointer references. Avoid forming pointer dependencies.**
 
 ## Problem: Cancerous dependency web
-Territories in particular are intended to be swapped out in real-time in order to easily modify resource attributes, e.g. Players build structures in their territory that reward new resource nodes.
+Territories in particular are intended to be swapped out in real time
+in order to easily modify resource attributes. e.g. Players build
+structures in their territory which rewards new resource node.
 
 To handle swapping out or modifying territories we have two options:
 1.  **Make territories fully mutable, modify or re-build resource
@@ -23,7 +25,11 @@ To handle swapping out or modifying territories we have two options:
         dependencies in other objects. More difficult to enforce
         memory safety.
 
-We opt for the 2nd option of mainly immutable objects and re-creating the object when properties need to change. This architecture, however, makes holding direct references difficult, since all these need to be updated when the object is re-created. This creates a bigger surface area for memory leaks:
+We opt for 2nd option of mainly immutable objects and re-creating the
+object when properties need to change. This architecture however makes
+holding direct references difficult since all these need to be updated
+when the object is re-created. This creates bigger surface area for
+memory leaks:
 ```
 Town {
     capital: Territory
@@ -35,7 +41,10 @@ Territory {
     neighbors: List<Territory>
 }
 ```
-If a territory is swapped out, all references to the old `Territory` object must be replaced with the `Town` and `Territory`. The alternative representation is the central storage of objects while enforcing only handle references:
+If a territory is swapped out, all references to old `Territory` object
+must be replaced in the `Town` and `Territory`. The alternative
+representation is central storage of objects, while enforcing only
+handle references:
 ```
 TownId = int
 

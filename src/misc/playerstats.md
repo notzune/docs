@@ -21,7 +21,7 @@ This section will outline the structure of the plugin from a programming standpo
 ![PlayerStats Structure](images/../../images/player-stats-structure.png)
 
 ### Data Handling
-The main component of the plugin is the Data Access Layer (DAL), defined by the `data` package of the plugin. The DAL utilizes two main Data Access Objects (DAO). The first of these DAOs is the `UserDatabase` class, which handles the SQL connection via HikariCP as shown in the code below:
+The main component of the plugin is the Data Access Layer (DAL) defined by the `data` package of the plugin. The DAL utilizes two main Data Access Objects (DAO). The first of these DAOs is the `UserDatabase` class which handles the SQL connection via HikariCP as shown in the code below:
 
 ```java
 public class UserDatabase {
@@ -56,4 +56,4 @@ public class UserDatabase {
 }
 ```
 
-The second DAO creates a JSON file per user in order to store data in a flatfile primarily for redundancy purposes, in the event that an SQL connection is no longer available or compromised. The use case for this sort of data storage is very limited as it requires components to directly receive data by accessing the `PlayerStats` API rather than accessing the SQL database directly. 
+The second DAO creates a JSON file per-user in-order to store data in a flatfile primarily for redundancy purposes; in the event that an SQL connection is no longer available or compromised. Use case for this sort of data storage is very limited as it requires componenets to directly recieve data by accessing the `PlayerStats` API rather than accessing the SQL database directly. 

@@ -1,7 +1,7 @@
 > ⚠️ **Warning:** This page is still under construction!
 
 # Project Timeline
-This page will outline the planned timeline for the project with a quick summary and breakdown of the phases of development, as well as the planned timeframe of each phase. 
+This page will outline the planned timeline for the project with a quick summary and breakdown of the phases of development, as well as the planned timeframe of each. 
 
 > This information is current as of `2023-02-03`
    
