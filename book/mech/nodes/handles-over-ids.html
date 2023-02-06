@@ -2812,6 +2812,9 @@
                         <!-- Page table of contents -->
                         <div class="sidetoc"><nav class="pagetoc"></nav></div>
 
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
                         <h1 id="prefer-handlesids-over-references"><a class="header" href="#prefer-handlesids-over-references">Prefer Handles/IDs over References</a></h1>
 <blockquote>
 <p><strong>tl;dr prefer storing handles like <code>TerritoryId</code> instead of direct
@@ -2945,22 +2948,6 @@ value class TerritoryId(private val id: Int)
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
