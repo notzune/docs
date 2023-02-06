@@ -16,3 +16,72 @@ This can be extremely frustrating especially on a project such as this when ther
 
 Luckily we can take several steps to prevent this from happening: 
 ### Standardization of Formatting
+When developing in Java, many developers have different styles of coding. In-order to standardize here are some guidelines that you should try and follow to keep code uniform and to prevent preventable merge conflicts on PRs: 
+
+#### **Whitespaces** 
+This is a big one. Make sure there is a white space between each new method such as:
+```java
+public class Example {
+    // whitespace
+    public Example() {
+        //some code...
+    }
+    // whitespace
+    public void anotherExample() {
+        //some code...
+    }
+}
+```
+Add white spaces to make code more readable such as this example from [TechnoVisionDev/JDA-Tutorial](https://github.com/TechnoVisionDev/JDA-Tutorial):
+
+*Instead of doing this:*
+
+```java
+public class TutorialBot {
+    
+    public TutorialBot() throws LoginException {
+
+        // Build shard manager
+        DefaultShardManagerBuilder builder = DefaultShardManagerBuilder.createDefault(token);
+        builder.setStatus(OnlineStatus.ONLINE);
+        builder.setActivity(Activity.watching("TechnoVisionTV"));
+        builder.enableIntents(GatewayIntent.GUILD_MESSAGES, GatewayIntent.GUILD_MEMBERS, GatewayIntent.GUILD_PRESENCES);
+        builder.setMemberCachePolicy(MemberCachePolicy.ALL);
+        builder.setChunkingFilter(ChunkingFilter.ALL);
+        builder.enableCache(CacheFlag.ONLINE_STATUS);
+        shardManager = builder.build();
+
+        // Register listeners
+        shardManager.addEventListener(new EventListener(), new CommandManager());
+    }
+    ...
+}
+```
+*Do this:*
+```java
+public class TutorialBot {
+    
+    public TutorialBot() throws LoginException {
+
+        // Build shard manager
+        DefaultShardManagerBuilder builder = DefaultShardManagerBuilder.createDefault(token);
+        builder.setStatus(OnlineStatus.ONLINE);
+        builder.setActivity(Activity.watching("TechnoVisionTV"));
+        builder.enableIntents( // add whitespaces here to make it more readable
+            GatewayIntent.GUILD_MESSAGES, 
+            GatewayIntent.GUILD_MEMBERS, 
+            GatewayIntent.GUILD_PRESENCES
+            );
+            ...
+        shardManager = builder.build();
+
+        // Register listeners
+        shardManager.addEventListener( // add them here too
+            new EventListener(), 
+            new CommandManager()
+            // this also makes it easier if you were to add more things to the list later on
+            ); 
+    }
+    ...
+}
+```

@@ -2806,6 +2806,12 @@
                         <!-- Page table of contents -->
                         <div class="sidetoc"><nav class="pagetoc"></nav></div>
 
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
                         <h1 id="housekeeping-rules"><a class="header" href="#housekeeping-rules">Housekeeping Rules</a></h1>
 <p>This page goes over some basic housekeeping rules in-order to maintain efficiency and organization within the project as well as instating some general guidelines about maintaining, contributing to, and using the project.</p>
 <h2 id="merge-conflicts-and-prevention"><a class="header" href="#merge-conflicts-and-prevention">Merge Conflicts and Prevention</a></h2>
@@ -2823,6 +2829,69 @@
 <p>This can be extremely frustrating especially on a project such as this when there will be times where more than one person may be working on a specific piece of code. </p>
 <p>Luckily we can take several steps to prevent this from happening: </p>
 <h3 id="standardization-of-formatting"><a class="header" href="#standardization-of-formatting">Standardization of Formatting</a></h3>
+<p>When developing in Java, many developers have different styles of coding. In-order to standardize here are some guidelines that you should try and follow to keep code uniform and to prevent preventable merge conflicts on PRs: </p>
+<h4 id="whitespaces"><a class="header" href="#whitespaces"><strong>Whitespaces</strong></a></h4>
+<p>This is a big one. Make sure there is a white space between each new method such as:</p>
+<pre><code class="language-java">public class Example {
+    // whitespace
+    public Example() {
+        //some code...
+    }
+    // whitespace
+    public void anotherExample() {
+        //some code...
+    }
+}
+</code></pre>
+<p>Add white spaces to make code more readable such as this example from <a href="https://github.com/TechnoVisionDev/JDA-Tutorial">TechnoVisionDev/JDA-Tutorial</a>:</p>
+<p><em>Instead of doing this:</em></p>
+<pre><code class="language-java">public class TutorialBot {
+    
+    public TutorialBot() throws LoginException {
+
+        // Build shard manager
+        DefaultShardManagerBuilder builder = DefaultShardManagerBuilder.createDefault(token);
+        builder.setStatus(OnlineStatus.ONLINE);
+        builder.setActivity(Activity.watching(&quot;TechnoVisionTV&quot;));
+        builder.enableIntents(GatewayIntent.GUILD_MESSAGES, GatewayIntent.GUILD_MEMBERS, GatewayIntent.GUILD_PRESENCES);
+        builder.setMemberCachePolicy(MemberCachePolicy.ALL);
+        builder.setChunkingFilter(ChunkingFilter.ALL);
+        builder.enableCache(CacheFlag.ONLINE_STATUS);
+        shardManager = builder.build();
+
+        // Register listeners
+        shardManager.addEventListener(new EventListener(), new CommandManager());
+    }
+    ...
+}
+</code></pre>
+<p><em>Do this:</em></p>
+<pre><code class="language-java">public class TutorialBot {
+    
+    public TutorialBot() throws LoginException {
+
+        // Build shard manager
+        DefaultShardManagerBuilder builder = DefaultShardManagerBuilder.createDefault(token);
+        builder.setStatus(OnlineStatus.ONLINE);
+        builder.setActivity(Activity.watching(&quot;TechnoVisionTV&quot;));
+        builder.enableIntents( // add whitespaces here to make it more readable
+            GatewayIntent.GUILD_MESSAGES, 
+            GatewayIntent.GUILD_MEMBERS, 
+            GatewayIntent.GUILD_PRESENCES
+            );
+            ...
+        shardManager = builder.build();
+
+        // Register listeners
+        shardManager.addEventListener( // add them here too
+            new EventListener(), 
+            new CommandManager()
+            // this also makes it easier if you were to add more things to the list later on
+            ); 
+    }
+    ...
+}
+</code></pre>
 
                     </main>
 
