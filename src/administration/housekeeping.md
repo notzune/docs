@@ -16,7 +16,7 @@ This can be extremely frustrating, especially on a project such as this when the
 
 Luckily we can take several steps to prevent this from happening: 
 ### Standardization of Formatting
-When developing in Java, many developers have different styles of coding. In-order to standardize here are some guidelines that you should try and follow to keep code uniform and to prevent preventable merge conflicts on PRs: 
+When developing in Java, many developers have different styles of coding. Inorder to standardize, here are some guidelines that you should try and follow to keep the code uniform and to prevent preventable merged conflicts on PRs:
 
 #### **Whitespaces** 
 This is a big one. Make sure there is a white space between each new method such as:
