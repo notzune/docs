@@ -249,11 +249,7 @@ Territory {
     ]
 }
 ```
-While this is more flexible, it incurs more development and runtime
-cost for checking which attributes exist in a territory. For my 
-targeted use case, the majority of required territory functionality
-is just income, crops, animals, and ore. The flexibility in
-the above "Entity-Component" style of territory did not seem worth it.
+While this is more flexible, it incurs more development and runtime cost for checking which attributes exist in a territory. For my targeted use case, the majority of required territory functionality is just income, crops, animals, and ore. The flexibility in the above "Entity-Component" style of territory did not seem worth it.
 
 
 ### **Fixed Function Territories:**

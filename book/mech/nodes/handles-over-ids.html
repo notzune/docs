@@ -2818,9 +2818,7 @@
 <code>Territory</code> pointer references. Avoid forming pointer dependencies.</strong></p>
 </blockquote>
 <h2 id="problem-cancerous-dependency-web"><a class="header" href="#problem-cancerous-dependency-web">Problem: Cancerous dependency web</a></h2>
-<p>Territories in particular are intended to be swapped out in real time
-in order to easily modify resource attributes. e.g. Players build
-structures in their territory which rewards new resource node.</p>
+<p>Territories in particular are intended to be swapped out in real-time in order to easily modify resource attributes, e.g. Players build structures in their territory that reward new resource nodes.</p>
 <p>To handle swapping out or modifying territories we have two options:</p>
 <ol>
 <li><strong>Make territories fully mutable, modify or re-build resource
@@ -2845,11 +2843,7 @@ memory safety.</li>
 </ul>
 </li>
 </ol>
-<p>We opt for 2nd option of mainly immutable objects and re-creating the
-object when properties need to change. This architecture however makes
-holding direct references difficult since all these need to be updated
-when the object is re-created. This creates bigger surface area for
-memory leaks:</p>
+<p>We opt for the 2nd option of mainly immutable objects and re-creating the object when properties need to change. This architecture, however, makes holding direct references difficult, since all these need to be updated when the object is re-created. This creates a bigger surface area for memory leaks:</p>
 <pre><code>Town {
     capital: Territory
     territories: ArrayList&lt;Territory&gt;
@@ -2860,10 +2854,7 @@ Territory {
     neighbors: List&lt;Territory&gt;
 }
 </code></pre>
-<p>If a territory is swapped out, all references to old <code>Territory</code> object
-must be replaced in the <code>Town</code> and <code>Territory</code>. The alternative
-representation is central storage of objects, while enforcing only
-handle references:</p>
+<p>If a territory is swapped out, all references to the old <code>Territory</code> object must be replaced with the <code>Town</code> and <code>Territory</code>. The alternative representation is the central storage of objects while enforcing only handle references:</p>
 <pre><code>TownId = int
 
 Town {
