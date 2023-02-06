@@ -2818,18 +2818,18 @@
 <blockquote>
 <p>Version control systems, like git, auto-magically manage code contributions. It identifies the change, when it occurred, who made it, and on what line so that developers can easily track the history of their codebase. However, git sometimes gets confused in the following situations:</p>
 <ul>
-<li>When more than one person changes the same line in a file and tries to merge the change to the same branch</li>
+<li>When more than one person changes the same line in a file and tries to merge the change to the same branch.</li>
 <li>When a developer deletes a file, but another developer edits it, and they both try to merge their changes to the same branch.</li>
-<li>When a developer deletes a line, but another developer edits it, and they both try to merge their changes to the same branch</li>
-<li>When a developer is cherry-picking a commit, which is the act of picking a commit from a branch and applying it to another</li>
-<li>When a developer is rebasing a branch, which is the process of moving a sequence of commits to a base commit</li>
+<li>When a developer deletes a line, but another developer edits it, and they both try to merge their changes to the same branch.</li>
+<li>When a developer is cherry-picking a commit, which is the act of picking a commit from a branch and applying it to another.</li>
+<li>When a developer is rebasing a branch, which is the process of moving a sequence of commits to a base commit.</li>
 </ul>
 <p><em>Taken from a <a href="https://dev.to/github/how-to-prevent-merge-conflicts-or-at-least-have-less-of-them-109p">Dev.to</a>.</em></p>
 </blockquote>
-<p>This can be extremely frustrating especially on a project such as this when there will be times where more than one person may be working on a specific piece of code. </p>
+<p>This can be extremely frustrating, especially on a project such as this when there will be times where more than one person may be working on a specific piece of code. </p>
 <p>Luckily we can take several steps to prevent this from happening: </p>
 <h3 id="standardization-of-formatting"><a class="header" href="#standardization-of-formatting">Standardization of Formatting</a></h3>
-<p>When developing in Java, many developers have different styles of coding. In-order to standardize here are some guidelines that you should try and follow to keep code uniform and to prevent preventable merge conflicts on PRs: </p>
+<p>When developing in Java, many developers have different styles of coding. Inorder to standardize, here are some guidelines that you should try and follow to keep the code uniform and to prevent preventable merged conflicts on PRs:</p>
 <h4 id="whitespaces"><a class="header" href="#whitespaces"><strong>Whitespaces</strong></a></h4>
 <p>This is a big one. Make sure there is a white space between each new method such as:</p>
 <pre><code class="language-java">public class Example {
@@ -2922,6 +2922,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
