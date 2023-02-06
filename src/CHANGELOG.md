@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file. This includ
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.1.1] - 2023-1-24 - 2023-1-31
+## [v2.1.1] - 2023-1-24 - 2023-02-03
 
 ### Added
 - Docs
@@ -28,14 +28,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Explanation of [cult objects](mech/cults/objects.md)
     - Breakdown of [Altars](mech/cults/altars.md)
   - [Player Stats](misc/playerstats.md) page and diagram.
+  - Added a [project timeline](administration/project-timeline.md) and associated pages:
+    - [Phase 1](administration/timeline/phase-1.md)
+    - [Housekeeping](administration/housekeeping.md) is meant to serve as a guideline to keep code uniform and encourage best practices to keep the project organized.
+  - Added a "Core" section discussing the core components that make up the backbone of the project
+    - [Common Library](core/common-lib.md) page outlining the framework and its functionality
 ### Changed
 - Docs
   - Changed structure of the table of contents
     - Moved the Map section underneath the Mechanics section as it made more sense
     - Moved "Lore" page to no longer be nested underneath the Map section and instead moved under Misc.
     - Moved "Claiming System" page to be nested under Nodes instead of its own section as it makes more sense
+    - Moved "PlayerStats" to the core section as it makes more sense
   - Updated footer on first page
   - Fixed various small formatting errors 
+  - Updated [contributions](misc/contributions.md) page
 
 ### Removed
 - Docs
