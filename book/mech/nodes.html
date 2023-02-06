@@ -2812,35 +2812,38 @@
                         <!-- Page table of contents -->
                         <div class="sidetoc"><nav class="pagetoc"></nav></div>
 
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
                         <blockquote>
 <p><span style="color:red">Currently unimplemented.</span></p>
 </blockquote>
 <h1 id="nodes"><a class="header" href="#nodes">Nodes</a></h1>
-<p>The nodes system is a claim system that essentially combines aspects from Towny and a plugin called Nodes by <a href="https://github.com/phonon/minecraft-nodes">phonon</a> (See his documentation for it <a href="https://nodes.soy/4-1-territories.html">here</a> for a better overview of what it does, I will be summarizing most of it here). We will be working off the fork by <a href="https://github.com/crusalis/multi-nodes/tree/master/nodes/src/main/kotlin/phonon/nodes">crusallis</a> as it's more updated.</p>
+<p>The nodes system is a claim system that essentially combines aspects of Towny and a plugin called, &quot;Nodes&quot; by <a href="https://github.com/phonon/minecraft-nodes">phonon</a> (See his documentation for it <a href="https://nodes.soy/4-1-territories.html">here</a> for a better overview of what it does, I will be summarizing most of it here). We will be working off the fork by <a href="https://github.com/crusalis/multi-nodes/tree/master/nodes/src/main/kotlin/phonon/nodes">crusallis</a> as it's more updated.</p>
 <h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
 <p>The nodes system can be summarized below in seven main points:</p>
 <ol>
-<li>Map segmented into pre-created territories which are groups of contiguous Minecraft chunks.</li>
+<li>The map is segmented into pre-created territories which are groups of contiguous Minecraft chunks.</li>
 <li>Territories have different resource nodes which provide different resource yields from mining and different rates for farming, animal breeding, etc...</li>
 <li>Players form a town which controls territories. Initial territory claims must be connected.</li>
-<li>War is capturing territories from another town.</li>
-<li>Towns choose 1 territory to be their capital which cannot be taken until all other territories are captured.</li>
-<li>A resource chest can be built in the capital which will periodically spawn in some resources dependandant on the resource yield for that territory.</li>
-<li>A captured territory is occupied and provides resource benefits to the occupier. The occupier has the option to annex a territory and add it to their town.</li>
+<li>War is capturing territory from another town.</li>
+<li>Towns choose 1 territory to be their capital, which cannot be taken until all other territories are captured.</li>
+<li>A resource chest can be built in the capital which will periodically spawn some resources dependent on the resource yield for that territory.</li>
+<li>A captured territory is occupied and provides resource benefits for the occupier. The occupier has the option to annex territory and add it to their town.</li>
 </ol>
 <h3 id="how-is-this-better-than-towny"><a class="header" href="#how-is-this-better-than-towny">How is this better than Towny?</a></h3>
-<p>Towny doesn't offer much in terms of any resource/economic differentiation between towns so theres no economy or trade and lack of justification for waging war. With this resource node system we aim to change that by giving incentives for players to be strategic about what land they decide to conquer, where they choose to settle, and how they conduct themselves diplomatically (such as by building or breaking trade relations with other nations).</p>
+<p>Towny doesn't offer much in terms of any resource/economic differentiation between towns, so there's no economy or trade and a lack of justification for waging war. With this resource node system, we aim to change that by giving incentives for players to be strategic about what land they decide to conquer, where they choose to settle, and how they conduct themselves diplomatically (such as by building or breaking trade relations with other nations).</p>
 <h2 id="territories"><a class="header" href="#territories">Territories</a></h2>
-<p>As opposed to Towny's basic land unit being the &quot;Townblock&quot;, the Node's system uses &quot;Territories&quot;</p>
+<p>As opposed to Towny's basic land unit being the &quot;Townblock&quot;, the Node's system uses &quot;Territories&quot;.</p>
 <ul>
 <li>Territories have unique resources.</li>
-<li>Towns have &quot;power&quot; which are points they spend to claim territories</li>
-<li>Each territory has a different &quot;power&quot; cost that a Town must pay in-order to claim.</li>
+<li>Towns have &quot;power&quot;, which are points they spend on claiming territories</li>
+<li>Each territory has a different &quot;power&quot; cost that a town must pay in order to claim.</li>
 <li>A territory's power cost depends on its size and resources</li>
 <li>More players in a town increases the town's power.</li>
-<li>Each player's power contribution to their town increases over play time (to a maximum value)</li>
+<li>Each player's power contribution to their town increases over playtime (to a maximum value)</li>
 </ul>
-<p>The territories will also have a web-editor that hooks into dynmap in-order to better map out where the territories should go using JSON objects.</p>
+<p>The territories will also have a web editor that hooks into dynmap in order to better map out where the territories should go using JSON objects.</p>
 <blockquote>
 <p>See <a href="nodes/territories.html">Territories</a></p>
 </blockquote>
@@ -2961,7 +2964,7 @@ This has no in-game behavior, this is purely for web editor/viewer.</p>
 <h3 id="priority-required"><a class="header" href="#priority-required">priority (required)</a></h3>
 <p><strong>Format</strong>: <code>&quot;priority&quot;: Number</code></p>
 <p>This is order that resource node properties are applied to a territory.
-Lower priority resource nodes are applied first</p>
+Lower priority resource nodes are applied first.</p>
 <h3 id="cost-required"><a class="header" href="#cost-required">cost (required)</a></h3>
 <p><strong>Format 1</strong>: <code>&quot;scale&quot;: Number</code><br />
 <strong>Format 2</strong>: <code>&quot;const&quot;: Number</code></p>

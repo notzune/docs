@@ -2812,6 +2812,9 @@
                         <!-- Page table of contents -->
                         <div class="sidetoc"><nav class="pagetoc"></nav></div>
 
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
                         <blockquote>
 <p><span style="color:yellow">Currently being developed as of 2023-01-28.</span></p>
 </blockquote>
@@ -2819,35 +2822,31 @@
 <p>⚠️ <strong>Warning:</strong> This page is still under construction!</p>
 </blockquote>
 <h1 id="cults"><a class="header" href="#cults">Cults</a></h1>
-<p>The purpose of the cults plugin is to provide another layer to gameplay. By allowing players to be creative in creating these fictious sects and design their own ideologies within the confines of the server, we open up avenues for player creativity and roleplay opportunities. As we have discussed in the introducatory pages of this documentation, increasing player engagement is one of our main goals in designing this project.</p>
+<p>The purpose of the cults plugin is to provide another layer to gameplay. By allowing players to be creative in creating these fictitious sects and design their own ideologies within the confines of the server, we open up avenues for player creativity and roleplay opportunities. As we have discussed in the introductory pages of this documentation, increasing player engagement is one of our main goals in designing this project.</p>
 <h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
-<p>The proposed plan for the cults system has many moving parts to it. This page was written in hopes to clarify the vision for the the plugin and its integration within the project including how it will interact with the other plugins/mechanics of the server. Each feature and mechanic of the plugin will be broken down further in this page and subsequent pages within this section.</p>
+<p>The proposed plan for the cult's system has many moving parts to it. This page was written in hopes to clarify the vision for the plugin and its integration within the project, including how it will interact with the other plugins/mechanics of the server. Each feature and mechanic of the plugin will be broken down further on this page and subsequent pages within this section.</p>
 <blockquote>
-<p>📝 <strong>Note:</strong> The terms &quot;deity&quot; and &quot;god&quot; are also interchangable and there is no difference between the two terms besides semantics.  God and deity are synonymous. According to their basic definitions, they both represent a supreme power. However, sometimes God as a term is used to represent the only supreme power, whereas deity can be used to refer to any of the forms of this supreme power and thus can be multiple in number. God is generally used in context to male gods, whereas deity can be used to refer to both god and goddess (female god).</p>
+<p>📝 <strong>Note:</strong> The terms &quot;deity&quot; and &quot;god&quot; are also interchangeable, as there is no difference between the two terms besides semantics.  God and deity are synonymous. According to their basic definitions, they both represent a supreme power. However, sometimes God as a term is used to represent the only supreme power, whereas deity can be used to refer to any of the forms of this supreme power and thus, can be multiple in number. God is generally used in the context of male gods, whereas deity can be used to refer to both god and goddess (female god).</p>
 </blockquote>
 <p>The following is a quick ten-point summary of the plugin: </p>
 <ol>
 <li>A player creates an <a href="cults/altars.html">altar</a> in-order to pray to a deity. </li>
-<li>If the deity doesn't exist then a new religion (cult) is formed and that deity is registered, and the player who created the altar becomes the headpriest for that cult.</li>
-<li>If another player &quot;prays&quot; to that altar and they do not belong to a cult yet, they will join that cult and become a follower of that deity they just prayed to</li>
-<li>A &quot;pantheon&quot; can be created which is essentially a grouping of different cults/deities together. Members within a cult who are also part of a pantheon can pray to other deities within the pantheon.</li>
-<li>The opposite holds true, and cults can label other cults as &quot;enemies&quot; or &quot;heretics&quot; making their deities forbidden to their worshippers</li>
-<li>As time goes on and the cult gains more of a following, head priests gain more power and can set laws for their religion called &quot;canon&quot;</li>
-<li>Canon laws can include things such as what kind of actions are forbidden by their followers such as food that is forbidden or actions that are encouraged like killing for example </li>
-<li>Followers of the cult can lose or gain favor with their god/deity</li>
-<li>Head priests can appoint fellow worshipers as priests</li>
-<li>Head priests and priests can pray to their deity for &quot;miracles&quot; or to put &quot;curses&quot; </li>
+<li>If the deity doesn't exist, then a new religion (cult) is formed and that deity is registered, and the player who created the altar becomes the head priest for that cult.</li>
+<li>If another player &quot;prays&quot; to that altar and they do not belong to a cult yet, they will join that cult and become a follower of that deity they just prayed to.</li>
+<li>A &quot;pantheon&quot; can be created, which is essentially a grouping of different cults/deities together. Members within a cult who are also part of a pantheon can pray to other deities within the pantheon.5. The opposite holds true, and cults can label other cults as &quot;enemies&quot; or &quot;heretics&quot;, making their deities forbidden to their worshippers.</li>
+<li>As time goes on and the cult gains more of a following, head priests gain more power and can set laws for their religion, called &quot;canon&quot;.</li>
+<li>Canon laws can include things such as what kind of actions are forbidden by their followers, such as food that is forbidden or actions that are encouraged, e.g. killing. </li>
+<li>Followers of the cult can lose or gain favor with their god/deity.</li>
+<li>Head priests can appoint fellow worshipers as priests.</li>
+<li>Head priests and priests can pray to their deity for &quot;miracles&quot; or to place &quot;curses&quot;.</li>
 </ol>
-<p>This summary, although crude, is the most simplest explanation of the plugin and how it functions. A more in-depth explanation of how the plugin works under the <a href="#basic-usage">Basic Usage</a> section below.</p>
-<p>For a better understanding, start reading from <a href="cults/objects.html">this</a> page to be able to visualize the internal object classes:</p>
-<blockquote>
-<p>See <a href="cults/objects.html">Objects</a></p>
-</blockquote>
+<p>This summary, although crude, is the simplest explanation of the plugin and how it functions. A more in-depth explanation of how the plugin works under the <a href="#basic-usage">Basic Usage</a> section below.</p>
+<p>For a better understanding, start reading from <a href="cults/objects.html">this</a> page to be able to visualize the internal object classes:&gt; See <a href="cults/objects.html">Objects</a>.</p>
 <h2 id="basic-usage"><a class="header" href="#basic-usage">Basic Usage</a></h2>
-<p>To create a <code>Cult</code> one must first build an <code>Altar</code>. Upon right clicking the sign, the plugin uses a regex-search to make sure that the deity being attempted does not match an existing <code>Deity</code> from the database. If the name is too similar or the deity already exists, it will return an error letting the user know what happened.</p>
-<p>If the cult is successfully created then the <code>Believer</code> (or Player) who created the cult automatically becomes the <code>Head Priest</code>. Others can join the cult by &quot;praying&quot; at either a <code>Shrine</code> or the altar. The head priest can promote these other believers to become priests. The <code>Priest</code> and head priest can perform prayers at the altar to grant blessings upon their cult or curses against a group of people.</p>
-<p>In-order to perform these rituals, a good rapport must be built with the deity. To become on good terms with the deity, the cult's believers must &quot;pray&quot; to the Deity (right click the sign) at shrines or altars. As relationship with the deity improves, the head priest can start to put together a <code>Holy Book</code>. </p>
-<p>The holy book is a set of &quot;laws&quot; known as <code>Canon</code> which are determined through a series of random pre-generated questions that the deity will ask the head priest. The answers given will shape the type of deity for that cult and will define what actions to take that allow a believer to either gain or lose favor.</p>
+<p>To create a <code>Cult</code>, one must first build an <code>Altar</code>. Upon right-clicking the sign, the plugin uses a regex search to make sure that the deity being attempted does not match an existing <code>Deity</code> from the database. If the name is too similar or the deity already exists, it will return an error letting the user know what happened.</p>
+<p>If the cult is successfully created, then the <code>Believer</code> (or Player) who created the cult automatically becomes the <code>Head Priest</code>. Others can join the cult by &quot;praying&quot; at either a <code>Shrine</code> or the altar. The head priest can promote these other believers to become priests. The <code>Priest</code> and the head priest can perform prayers at the altar to grant blessings upon their cult or curses against a group of people.</p>
+<p>In order to perform these rituals, a good rapport must be built with the deity. To become on good terms with the deity, the cult's believers must &quot;pray&quot; to the Deity (right-click the sign) at shrines or altars. As their relationship with the deity improves, the head priest can start to put together a <code>Holy Book</code>. </p>
+<p>The holy book is a set of &quot;laws&quot; known as <code>Canon</code> which are determined through a series of random pre-generated questions that the deity will ask the head priest. The answers given will shape the type of deity for that cult and will define what actions to take that allows a believer to either gain or lose favour.</p>
 
                     </main>
 
