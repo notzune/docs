@@ -3,7 +3,7 @@
 Documentation of the mechanics and vision of the server.
 ---
 
-> 📝 **Info:** This document was last updated on 2023-02-03!
+> 📝 **Info:** This document was last updated on 2023-02-11
 > 
 > ⚠️ **Warning:** All information should be treated as current unless specifically told otherwise.
 >
@@ -15,8 +15,8 @@ This is a living document. All content regarding mechanics and gameplay is subje
 
 See the [changelog](CHANGELOG.md) to see a list of features added/removed and/or updated.  
 
-This project utilizes [SemVer](https://semver.org/) for its versioning structure. The correct project version number should be displayed at the top of this page as well as at the top of the changelog.> 
-⚠️ **Warning:** at the time of writing, this document is currently in major version 0, meaning there is no playable nor stable version as the project is still in its initial development stage. 
+This project utilizes [SemVer](https://semver.org/) for its versioning structure. The correct project version number should be displayed at the top of this page as well as at the top of the changelog.   
+> ⚠️ **Warning:** at the time of writing, this document is currently in major version 0, meaning there is no playable nor stable version as the project is still in its initial development stage. 
 
 ## A Brief History
 

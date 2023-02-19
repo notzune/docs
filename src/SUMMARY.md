@@ -12,6 +12,8 @@
   - [Resources](mech/economy/resources.md)
     - [Crops](mech/economy/resources/crops.md)
     - [HiddenOre](mech/economy/resources/hiddenore.md)
+  - [API](mech/economy/api.md)
+    - [Class Hierarchy](mech/economy/api/hierarchy.md)
 
 - [NPCs](mech/npc.md)
   - [Types]()
