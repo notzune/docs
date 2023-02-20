@@ -54,6 +54,7 @@
 - [Housekeeping](administration/housekeeping.md)
 - [Optimization](administration/optimization.md)
 - [Coding Standard](administration/coding-standard.md)
+  - [Proper Git Commits](administration/commits.md)
 - [Project Timeline](administration/project-timeline.md)
   - [Phase 1](administration/timeline/phase-1.md)
 # Misc
