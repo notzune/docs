@@ -10704,6 +10704,7 @@
   }
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width:1439px) {
  :root{
     --content-max-width: 98%;
@@ -10767,6 +10768,8 @@
 
 =======
 >>>>>>> d7a47ae9cb6a69aff7c5b7bbd2100e84a7ad1711
+=======
+>>>>>>> parent of 234431c (various files (a lot))
 /* Themes */
 
 .ayu {
