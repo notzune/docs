@@ -134,3 +134,4 @@ Logger.debug(“User info : ” + user.getName() + ” : login ID : ” + user.g
 Logger.info(“Method called for setting user data”);
 ```
 
+> See also [Coding Standard](coding-standard.md)
