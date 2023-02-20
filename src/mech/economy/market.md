@@ -93,8 +93,4 @@ Enchantment tax is applied when enchantments are purchased. Enchantment tax will
 
 It allows poor players to make more money during sales than rich players. Dynamic tax will only be applied when the player's balance is between the money-floor and the money-cap defined in config.yml. The maximum tax rate defined in config.yml will be applied when the player's balance is equal to or greater than the money-cap. If the max tax is set to 100 percent the player will no longer make money when selling items to a server shop. At the money floor, no tax will be applied. Between the cap and floor, the tax rate will gradually increase as the player's balance approaches the money cap.
 
-> See also [Banking](banking.md), and the [Nation System](../nation-system.md)    
-   
-## Object Hierarchy
-In this section we will cover the object hierarchy of how the actual code will be structured as well as snippets from [Gringotts](https://github.com/nikosgram/gringotts), [HyperConomyX](https://github.com/coleweinman/HyperConomyX) and [TownyEco](https://github.com/ZackRuybal/TownyEco) as a sort-of guideline for how the plugin will work once completed.    
-
+> See also [banking](banking.md), and the [nation system](../nation-system.md)

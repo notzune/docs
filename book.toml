@@ -43,7 +43,7 @@ light-links             = "#1f1fff"
 rust-links              = "#1f1fff"
 
 # if true, never read and touch the files in theme dir
-turn-off = false
+turn-off = true
 
 # If you set `pagetoc = true`, you need to set the following as well:
 [output.html]

@@ -12,7 +12,7 @@
   - [Resources](mech/economy/resources.md)
     - [Crops](mech/economy/resources/crops.md)
     - [HiddenOre](mech/economy/resources/hiddenore.md)
-  - [API](mech/economy/api.md)
+  - [API](mech/economy/API.md)
     - [Class Hierarchy](mech/economy/api/hierarchy.md)
 
 - [NPCs](mech/npc.md)
@@ -32,6 +32,7 @@
   - [Configuration](mech/cults/config.md)
   - [Altars](mech/cults/altars.md)
   - [Shrines](mech/cults/shrines.md)
+  - [Transmutations](mech/cults/transmutations.md)
   
 - [Nodes](mech/nodes.md)
   - [Territories](mech/nodes/territories.md)

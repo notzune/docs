@@ -3,7 +3,7 @@
 Documentation of the mechanics and vision of the server.
 ---
 
-> 📝 **Info:** This document was last updated on 2023-02-11
+> 📝 **Info:** This document was last updated on 2023-02-20
 > 
 > ⚠️ **Warning:** All information should be treated as current unless specifically told otherwise.
 >
@@ -15,9 +15,10 @@ This is a living document. All content regarding mechanics and gameplay is subje
 
 See the [changelog](CHANGELOG.md) to see a list of features added/removed and/or updated.  
 
-This project utilizes [SemVer](https://semver.org/) for its versioning structure. The correct project version number should be displayed at the top of this page as well as at the top of the changelog.   
+This project utilizes [SemVer](https://semver.org/) for its versioning structure. The correct project version number should be displayed at the top of this page as well as at the top of the changelog.
+   
 > ⚠️ **Warning:** at the time of writing, this document is currently in major version 0, meaning there is no playable nor stable version as the project is still in its initial development stage. 
-
+   
 ## A Brief History
 
 This is the second iteration of AirshipCraft. The first iteration was produced by mjcrafter100 (now Grau_Wulf)'s original AirshipCraft in 2015. The vision for his server was little more than an SMP server inspired by Movecraft and Factions features, nothing else. Although simple, it was extremely popular and loved by many. As AirshipCraft evolved, the vision shifted to form a geopolitical server which would later be known as 'Total War'. The Total War series of Minecraft servers will continue to face its own iterations of changes, but the main focus was always some type of land-claiming plugin and Movecraft.

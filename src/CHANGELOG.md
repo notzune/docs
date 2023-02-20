@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file. This includ
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.1.1] - 2023-1-24 - 2023-02-03
+## [v2.1.1] - 2023-1-24 - 2023-02-20
 
 ### Added
 - Docs
@@ -27,6 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - [Cults](mech/cults.md) page.
     - Explanation of [cult objects](mech/cults/objects.md).
     - Breakdown of [Altars](mech/cults/altars.md)
+    - Explanation of [Transmutations](mech/cults/transmutations.md)
   - [Player Stats](misc/playerstats.md) page and diagram.
   - Added a [project timeline](administration/project-timeline.md) and associated pages:
     - [Phase 1](administration/timeline/phase-1.md).
