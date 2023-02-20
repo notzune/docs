@@ -27,6 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - [Cults](mech/cults.md) page.
     - Explanation of [cult objects](mech/cults/objects.md).
     - Breakdown of [Altars](mech/cults/altars.md)
+    - Explanation of [Transmutations](mech/cults/transmutations.md)
   - [Player Stats](misc/playerstats.md) page and diagram.
   - Added a [project timeline](administration/project-timeline.md) and associated pages:
     - [Phase 1](administration/timeline/phase-1.md).

@@ -122,3 +122,7 @@ Finally, we reach the `Cult` object. A cult takes a list of `Believers` as its m
 
 ### Holy Land
 The `Holy Land` is the chunk containing the `Altar`. This creates a geographical "home" for the cult. This is to help track a series of cult-specific events, such as but not limited to a `Sacrafice`.
+
+### Transmutation
+> See [Transmutations](transmutations.md)
+`Transmutations` are a mechanic of the cults system that allows for believers of a cult to recieve "supernatural" powers from being devout worshippers of their deity. This includes various things such as increased strength buff, jump boost, mining speed etc. 

@@ -32,6 +32,7 @@
   - [Configuration](mech/cults/config.md)
   - [Altars](mech/cults/altars.md)
   - [Shrines](mech/cults/shrines.md)
+  - [Transmutations](mech/cults/transmutations.md)
   
 - [Nodes](mech/nodes.md)
   - [Territories](mech/nodes/territories.md)
