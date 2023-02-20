@@ -44,6 +44,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Updated footer on first page.
   - Fixed various small formatting errors .
   - Updated [contributions](misc/contributions.md) page.
+  - Changed `Administration` -> `General Development`
+    - Better reflection of what the section is meant for.
 
 ### Removed
 - Docs:
