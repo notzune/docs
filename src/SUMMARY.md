@@ -27,6 +27,7 @@
   - [Weapons](mech/combat/weapons.md)
 
 - [Skills](mech/skills.md)
+
 - [Cults](mech/cults.md)
   - [Objects](mech/cults/objects.md)
   - [Configuration](mech/cults/config.md)
@@ -38,6 +39,7 @@
   - [Territories](mech/nodes/territories.md)
   - [Prefer Handles over IDs](mech/nodes/handles-over-ids.md)
   - [Claiming System](mech/nodes/nation-system.md)
+  - [NPC Integration](mech/nodes/npc-integration.md)
   
 - [Quests](mech/quests.md)
 
