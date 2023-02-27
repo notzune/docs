@@ -24,6 +24,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - [Resources](mech/economy/resources.md).
     - [Market](mech/economy/market.md).
     - [Banking](mech/economy/banking.md).
+    - Started explaining the [API](mech/economy/API.md)
+      - Class [Hierarchy](mech/economy/api/hierarchy.md)
   - [Cults](mech/cults.md) page.
     - Explanation of [cult objects](mech/cults/objects.md).
     - Breakdown of [Altars](mech/cults/altars.md)
