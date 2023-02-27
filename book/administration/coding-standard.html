@@ -1,0 +1,342 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Coding Standard - AirshipCraft Documentation</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/pagetoc.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="../CHANGELOG.html">Changelog</a></li><li class="chapter-item expanded affix "><li class="part-title">Mechanics</li><li class="chapter-item expanded "><a href="../mech/economy.html"><strong aria-hidden="true">1.</strong> Economy</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mech/economy/market.html"><strong aria-hidden="true">1.1.</strong> Market</a></li><li class="chapter-item expanded "><a href="../mech/economy/spreadsheet.html"><strong aria-hidden="true">1.2.</strong> Spreadsheet</a></li><li class="chapter-item expanded "><a href="../mech/economy/banking.html"><strong aria-hidden="true">1.3.</strong> Banking</a></li><li class="chapter-item expanded "><a href="../mech/economy/companies.html"><strong aria-hidden="true">1.4.</strong> Companies</a></li><li class="chapter-item expanded "><a href="../mech/economy/resources.html"><strong aria-hidden="true">1.5.</strong> Resources</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mech/economy/resources/crops.html"><strong aria-hidden="true">1.5.1.</strong> Crops</a></li><li class="chapter-item expanded "><a href="../mech/economy/resources/hiddenore.html"><strong aria-hidden="true">1.5.2.</strong> HiddenOre</a></li></ol></li><li class="chapter-item expanded "><a href="../mech/economy/API.html"><strong aria-hidden="true">1.6.</strong> API</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mech/economy/api/hierarchy.html"><strong aria-hidden="true">1.6.1.</strong> Class Hierarchy</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../mech/npc.html"><strong aria-hidden="true">2.</strong> NPCs</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">2.1.</strong> Types</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mech/npcs/types/characters.html"><strong aria-hidden="true">2.1.1.</strong> Characters</a></li><li class="chapter-item expanded "><a href="../mech/npcs/types/soldier.html"><strong aria-hidden="true">2.1.2.</strong> Soldiers</a></li><li class="chapter-item expanded "><a href="../mech/npcs/types/merchants.html"><strong aria-hidden="true">2.1.3.</strong> Merchants</a></li><li class="chapter-item expanded "><a href="../mech/npcs/types/builder.html"><strong aria-hidden="true">2.1.4.</strong> Builder</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../mech/combat.html"><strong aria-hidden="true">3.</strong> Combat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mech/combat/movecraft.html"><strong aria-hidden="true">3.1.</strong> Movecraft</a></li><li class="chapter-item expanded "><a href="../mech/combat/weapons.html"><strong aria-hidden="true">3.2.</strong> Weapons</a></li></ol></li><li class="chapter-item expanded "><a href="../mech/skills.html"><strong aria-hidden="true">4.</strong> Skills</a></li><li class="chapter-item expanded "><a href="../mech/cults.html"><strong aria-hidden="true">5.</strong> Cults</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mech/cults/objects.html"><strong aria-hidden="true">5.1.</strong> Objects</a></li><li class="chapter-item expanded "><a href="../mech/cults/config.html"><strong aria-hidden="true">5.2.</strong> Configuration</a></li><li class="chapter-item expanded "><a href="../mech/cults/altars.html"><strong aria-hidden="true">5.3.</strong> Altars</a></li><li class="chapter-item expanded "><a href="../mech/cults/shrines.html"><strong aria-hidden="true">5.4.</strong> Shrines</a></li><li class="chapter-item expanded "><a href="../mech/cults/transmutations.html"><strong aria-hidden="true">5.5.</strong> Transmutations</a></li></ol></li><li class="chapter-item expanded "><a href="../mech/nodes.html"><strong aria-hidden="true">6.</strong> Nodes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mech/nodes/territories.html"><strong aria-hidden="true">6.1.</strong> Territories</a></li><li class="chapter-item expanded "><a href="../mech/nodes/handles-over-ids.html"><strong aria-hidden="true">6.2.</strong> Prefer Handles over IDs</a></li><li class="chapter-item expanded "><a href="../mech/nodes/nation-system.html"><strong aria-hidden="true">6.3.</strong> Claiming System</a></li><li class="chapter-item expanded "><a href="../mech/nodes/npc-integration.html"><strong aria-hidden="true">6.4.</strong> NPC Integration</a></li></ol></li><li class="chapter-item expanded "><a href="../mech/quests.html"><strong aria-hidden="true">7.</strong> Quests</a></li><li class="chapter-item expanded affix "><li class="part-title">Map</li><li class="chapter-item expanded "><a href="../map/regions.html"><strong aria-hidden="true">8.</strong> Regions</a></li><li class="chapter-item expanded "><a href="../map/cities.html"><strong aria-hidden="true">9.</strong> City States</a></li><li class="chapter-item expanded "><a href="../map/mapoverview.html"><strong aria-hidden="true">10.</strong> Map Overview</a></li><li class="chapter-item expanded affix "><li class="part-title">Core</li><li class="chapter-item expanded "><a href="../core/common-lib.html"><strong aria-hidden="true">11.</strong> ACCommonLib</a></li><li class="chapter-item expanded "><a href="../core/playerstats.html"><strong aria-hidden="true">12.</strong> PlayerStats</a></li><li class="chapter-item expanded affix "><li class="part-title">General Development</li><li class="chapter-item expanded "><a href="../administration/housekeeping.html"><strong aria-hidden="true">13.</strong> Housekeeping</a></li><li class="chapter-item expanded "><a href="../administration/optimization.html"><strong aria-hidden="true">14.</strong> Optimization</a></li><li class="chapter-item expanded "><a href="../administration/coding-standard.html" class="active"><strong aria-hidden="true">15.</strong> Coding Standard</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../administration/commits.html"><strong aria-hidden="true">15.1.</strong> Proper Git Commits</a></li></ol></li><li class="chapter-item expanded "><a href="../administration/project-timeline.html"><strong aria-hidden="true">16.</strong> Project Timeline</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../administration/timeline/phase-1.html"><strong aria-hidden="true">16.1.</strong> Phase 1</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Misc</li><li class="chapter-item expanded "><a href="../misc/lore.html"><strong aria-hidden="true">17.</strong> Lore</a></li><li class="chapter-item expanded affix "><a href="../misc/contributions.html">Contributions</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">AirshipCraft Documentation</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
+                        <h1 id="coding-standard"><a class="header" href="#coding-standard">Coding Standard</a></h1>
+<p>Coding standards are a set of guidelines that reputable software development companies expect their programmers to adhere to. According to their organization's needs and the kinds of software they create, they typically create their own coding standards and rules. Maintaining coding standards is crucial for programmers; otherwise, the code would be rejected during code review.</p>
+<p>For our project, we would like to implement and enforce some coding standards to achieve uniformity across the various different repositories and to make collaboration easier.</p>
+<blockquote>
+<p>See also <a href="housekeeping.html">Housekeeping</a> and <a href="optimization.html">Optimization</a> as well as <a href="https://www.cs.bu.edu/courses/cs112/problem_sets/coding_standards.html#:~:text=There%20are%20two%20standard%20formats%20for%20braces%2C%20either,a%20pair%20is%20lined%20up%20%20vertically.%20">this</a> page by Wayne Snyder from Boston University.</p>
+</blockquote>
+<h2 id="purpose-of-having-coding-standards"><a class="header" href="#purpose-of-having-coding-standards">Purpose of Having Coding Standards:</a></h2>
+<ul>
+<li>A coding standard gives a uniform appearance to the codes written by different engineers.</li>
+<li>It improves readability, and maintainability of the code and it reduces complexity also.</li>
+<li>It helps in code reuse and helps to detect error easily.</li>
+<li>It promotes sound programming practices and increases efficiency of the programmers.</li>
+</ul>
+<p>Below is the outlined coding standard going forward.</p>
+<h2 id="standardization-of-headers-for-different-modules"><a class="header" href="#standardization-of-headers-for-different-modules">Standardization of Headers for Different Modules</a></h2>
+<p>A header is the block of text at the top of a class, it should go at the top of the class and include the following things:</p>
+<ul>
+<li>Name of the module</li>
+<li>Date of module creation</li>
+<li>Author of the module</li>
+<li>Modification history</li>
+<li>Synopsis of the module about what the module does</li>
+<li>Different functions supported in the module along with their input output parameters</li>
+<li>Global variables accessed or modified by the module</li>
+</ul>
+<p>Header comments (see below) should use the multi-line comment style (i.e., use * and */) and all other comments should use the single-line (i.e., use //) convention. This is because you can surround single-line comments with a multi-line comment, but not multi-line around multi-line — if you want to comment out a region of code during development, and you used multi-line comments everywhere, you are stuck.</p>
+<p>Here is an example of a header comment:</p>
+<pre><code class="language-java">/*
+  * Customer.java
+  * by John Doe (jdoe@example.com)
+  * 2022-03-20
+  *
+  * This class represents a bank customer. It contains basic
+  * fields and references to the customer's accounts.
+  *
+  * Note that the main() method's input data file must be
+  * called &quot;finance_data.txt&quot;. For the format of this
+  * file, see comment above the getData() method.
+  *
+  * Credits: The code for the hash table in the
+  * calculateInterestRate() method was taken from
+  * &quot;Algorithms and Data Structures,&quot; by George Guidal, pp. 234-35.
+  */
+</code></pre>
+<blockquote>
+<p>📝 <strong>Note:</strong> You can generate some default file header comments with IntelliJ IDEA, see <a href="https://www.jetbrains.com/help/idea/using-file-and-code-templates.html#syntax">their page on how to do this</a>.</p>
+</blockquote>
+<p>A header should also (for our purposes) come in the form of a repository's <code>README.md</code> file. Each repository should be initialized with a README, and if it is a plugin then it must also be initialized with a properly formatted <code>plugin.yml</code> file.</p>
+<p>For better understanding and maintenance of the code, the header of different modules should follow some standard format and information. The header format must contain the following:</p>
+<h3 id="name-of-the-module"><a class="header" href="#name-of-the-module"><strong>Name of the Module</strong></a></h3>
+<p>Here is the name of the project or module for which the repository was made. Name should be short and concise by giving an accurate description of the main purpose of that plugin or project.</p>
+<p>For example, the <a href="../core/playerstats.html"><code>PlayerStats</code></a> module, although it will handle the database connection  and data storage for the rest of the project, it's main purpose is to record information about the player in the form of statistics therefore: <code>PlayerStats</code>.</p>
+<p>The <a href="../mech/economy/market.html"><code>Market</code></a> module handles the entire economy system of the project by implementing an API but it's main purpose is to build a functioning dynamic market economy, thus: <code>Market</code>.</p>
+<h3 id="proper-dating"><a class="header" href="#proper-dating"><strong>Proper Dating</strong></a></h3>
+<p>The creation of the module as well as the dates of any major or minor updates and/or bug fixes must be correctly recorded to keep things organized. Please follow <code>ISO 8601</code> (YYYY-MM-DD). </p>
+<h3 id="crediting-of-contributors"><a class="header" href="#crediting-of-contributors"><strong>Crediting of Contributors</strong></a></h3>
+<p>Please accurately credit authors of the code including yourself and any other contributor such as authors of open-source works that you took from. This is to prevent any licencing or copyright issues as well as serve as a reference as to who should be contacted in the event of a bug or feature request.</p>
+<h3 id="modification-history"><a class="header" href="#modification-history"><strong>Modification History</strong></a></h3>
+<p>The complete and unadulturated modification history of the module and its files should be documented.</p>
+<p>This includes but not limited to: </p>
+<ul>
+<li>The creation and maintaining of a proper changelog that correctly uses SemVer 
+<ul>
+<li>
+<blockquote>
+<p>See: <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a> as well as <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a></p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>Proper commits and commit comments
+<ul>
+<li>
+<blockquote>
+<p>See: <a href="commits.html">Proper Git Commits</a> on how to practice good commits</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>Commenting out of deprecated code rather than deleting for posterity and documentation purposes</li>
+<li>When possible, add proper annotations such as <code>@Deprecated</code> when planning to remove a method in the future</li>
+</ul>
+<h3 id="synopsis-of-the-module"><a class="header" href="#synopsis-of-the-module"><strong>Synopsis of the Module</strong></a></h3>
+<p>A short summary of the module and what it aims to do and currently does should be included.</p>
+<p>This also includes different functions supported in the module along with their input output parameters (i.e. commands and command arguments/parameters and the intendend outputs)</p>
+<p>Be descriptive!</p>
+<h2 id="naming-conventions-for-local-variables-global-variables-constants-and-functions"><a class="header" href="#naming-conventions-for-local-variables-global-variables-constants-and-functions">Naming Conventions for Local Variables, Global Variables, Constants and Functions</a></h2>
+<p>Below are some naming conventions to follow when writing code:</p>
+<ul>
+<li>Meaningful and understandable variables name helps anyone to understand the reason of using it.</li>
+<li>Local variables should be named using camel case lettering starting with small letter (e.g. localData) </li>
+<li>Global variables names should start with a capital letter (e.g. GlobalData)</li>
+<li>Constant names should be formed using capital letters only (e.g. CONSDATA)</li>
+<li>Avoid the use of digits in variable names</li>
+<li>The names of the function should be written in camel case starting with small letters</li>
+<li>The name of the function must describe the reason of using the function clearly and briefly</li>
+</ul>
+<h2 id="proper-indentation-and-spacing"><a class="header" href="#proper-indentation-and-spacing">Proper Indentation and Spacing</a></h2>
+<blockquote>
+<p>This was covered briefly in <a href="housekeeping.html">Housekeeping</a></p>
+</blockquote>
+<p>Proper indentation is very important to increase the readability of the code. For making the code readable, programmers should use White spaces properly. Some of the spacing conventions are given below:</p>
+<ul>
+<li>There must be a space after giving a comma between two function arguments.</li>
+<li>Each nested block should be properly indented and spaced.</li>
+<li>Proper indentation should be there at the beginning and at the end of each block in the program.</li>
+<li>Curly brace goes at the end of the line that starts the class, method, loop, etc., and the closing brace is on a line by itself, lined up vertically with the start of the first line:</li>
+</ul>
+<p>This will look like this:</p>
+<pre><code class="language-java">public class SomeClass {
+
+    public SomeClass() {
+        ...;
+    }
+
+    public int someMethod(int n, float m) {
+        ...;
+        for (int i = 0; i &lt; someField; i++) {
+            ...;
+        }
+        ...;
+    }
+}
+</code></pre>
+<h2 id="code-should-be-well-documented"><a class="header" href="#code-should-be-well-documented">Code Should be Well Documented</a></h2>
+<p>The code should be properly commented for understanding easily. Comments regarding the statements increase the understandability of the code.</p>
+<p>For each significant field or variable declaration, give a brief comment stating the use of the variable, and when useful, the units (e.g., feet or inches).</p>
+<p>Give end-of-line comments for any line of code that is trickly, or non-obvious; don’t overdo this, and don’t just rephrase the Java in English, but DO provide concise, informative comments to help the reader (who knows Java idioms, but not your code) understand what is going on.</p>
+<p>Create Javadoc comments wherever and whenever possible, <a href="https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html">here</a> is a tutorial on how to use the Javadoc feature in your code.</p>
+<h2 id="reduce-function-length-whenever-possible"><a class="header" href="#reduce-function-length-whenever-possible">Reduce Function Length Whenever Possible</a></h2>
+<p>Lengthy functions are very difficult to understand. That’s why functions should be small enough to carry out small work and lengthy functions should be broken into small ones for completing small tasks.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../administration/optimization.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../administration/commits.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../administration/optimization.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../administration/commits.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../theme/pagetoc.js"></script>
+
+
+    </body>
+</html>
