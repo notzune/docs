@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file. This includ
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.1.1] - 2023-1-24 - 2023-02-20
+## [v2.1.1] - 2023-1-24 - 2023-02-27
 
 ### Added
 - Docs
@@ -24,6 +24,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - [Resources](mech/economy/resources.md).
     - [Market](mech/economy/market.md).
     - [Banking](mech/economy/banking.md).
+    - Started explaining the [API](mech/economy/API.md)
+      - Class [Hierarchy](mech/economy/api/hierarchy.md)
   - [Cults](mech/cults.md) page.
     - Explanation of [cult objects](mech/cults/objects.md).
     - Breakdown of [Altars](mech/cults/altars.md)
@@ -32,6 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Added a [project timeline](administration/project-timeline.md) and associated pages:
     - [Phase 1](administration/timeline/phase-1.md).
     - [Housekeeping](administration/housekeeping.md) is meant to serve as a guideline to keep code uniform and encourage best practices to keep the project organized.
+    - Also added [Coding Standard](administration/coding-standard.md), [Optimization](administration/optimization.md) and [Commits](administration/commits.md)
   - Added a "Core" section discussing the core components that make up the backbone of the project.
     - [Common Library](core/common-lib.md) page outlining the framework and its functionality.
 ### Changed
@@ -44,6 +47,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Updated footer on first page.
   - Fixed various small formatting errors .
   - Updated [contributions](misc/contributions.md) page.
+  - Changed `Administration` -> `General Development`
+    - Better reflection of what the section is meant for.
 
 ### Removed
 - Docs:
