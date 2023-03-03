@@ -37,6 +37,7 @@
   - [Territories](mech/nodes/territories.md)
   - [Prefer Handles over IDs](mech/nodes/handles-over-ids.md)
   - [Nation System](mech/nodes/nation-system.md)
+    - [Objects](mech/nodes/nations/objects.md)
     - [Permissions](mech/nodes/nations/permissions.md)
   - [NPC Integration](mech/nodes/npc-integration.md)
   
