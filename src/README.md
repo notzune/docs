@@ -17,7 +17,7 @@ See the [changelog](CHANGELOG.md) to see a list of features added/removed and/or
 
 This project utilizes [SemVer](https://semver.org/) for its versioning structure. The correct project version number should be displayed at the top of this page as well as at the top of the changelog.
    
-> ⚠️ **Warning:** at the time of writing, this document is currently in major version 0, meaning there is no playable nor stable version as the project is still in its initial development stage. 
+> ⚠️ **Warning:** at the time of writing, the project is currently in major version 0, meaning there is no playable nor stable version as the project is still in its initial development stage. 
    
 ## A Brief History
 
