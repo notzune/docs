@@ -18,10 +18,6 @@
 
 - [NPCs](mech/npc.md)
   - [Types]()
-    - [Characters](mech/npcs/types/characters.md)
-    - [Soldiers](mech/npcs/types/soldier.md)
-    - [Merchants](mech/npcs/types/merchants.md)
-    - [Builder](mech/npcs/types/builder.md)
 
 - [Combat](mech/combat.md)
   - [Movecraft](mech/combat/movecraft.md)
