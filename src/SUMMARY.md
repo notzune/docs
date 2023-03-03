@@ -14,6 +14,7 @@
     - [HiddenOre](mech/economy/resources/hiddenore.md)
   - [API](mech/economy/API.md)
     - [Class Hierarchy](mech/economy/api/hierarchy.md)
+    <!-- - [TaxedTransaction](mech/economy/api/taxedtransaction.md) -->
 
 - [NPCs](mech/npc.md)
   - [Types]()
@@ -24,6 +25,7 @@
 
 - [Combat](mech/combat.md)
   - [Movecraft](mech/combat/movecraft.md)
+  - [DamageListener](mech/combat/damagelistener.md)
   - [Weapons](mech/combat/weapons.md)
 
 - [Skills](mech/skills.md)
@@ -38,7 +40,8 @@
 - [Nodes](mech/nodes.md)
   - [Territories](mech/nodes/territories.md)
   - [Prefer Handles over IDs](mech/nodes/handles-over-ids.md)
-  - [Claiming System](mech/nodes/nation-system.md)
+  - [Nation System](mech/nodes/nation-system.md)
+    - 
   - [NPC Integration](mech/nodes/npc-integration.md)
   
 - [Quests](mech/quests.md)
