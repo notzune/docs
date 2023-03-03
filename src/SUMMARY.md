@@ -50,7 +50,7 @@
 
 # Core
 - [ACCommonLib](core/common-lib.md)
-- [PlayerStats](core/playerstats.md)
+- [Datum](core/datum.md)
 
 # General Development
 - [Housekeeping](administration/housekeeping.md)
