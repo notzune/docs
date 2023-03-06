@@ -20,7 +20,13 @@ This section will outline the structure of the plugin from a programming standpo
 
 ![PlayerStats Structure](images/../../images/player-stats-structure.png)
 
-### Data Handling
+A more updated graphic by **don** who is in-charge of working on the system:
+
+![Don's Updated Structure](images/../../images/don_data_map.png)
+
+### Data Handling (OLD)
+> ⚠️ **Warning:** This section is considered old as we are now using a fork of **don**'s [Kaizen](https://github.com/donpsabance/Kaizen).
+    
 The main component of the plugin is the Data Access Layer (DAL), defined by the `data` package of the plugin. The DAL utilizes two main Data Access Objects (DAO). The first of these DAOs is the `UserDatabase` class, which handles the SQL connection via HikariCP as shown in the code below:
 
 ```java
@@ -57,3 +63,31 @@ public class UserDatabase {
 ```
 
 The second DAO creates a JSON file per user in order to store data in a flatfile primarily for redundancy purposes, in the event that an SQL connection is no longer available or compromised. The use case for this sort of data storage is very limited as it requires components to directly receive data by accessing the `PlayerStats` API rather than accessing the SQL database directly. 
+
+### Data Handling (Kaizen)
+The new method of data handling utilizes **don**'s API known as [Kaizen](https://github.com/donpsabance/Kaizen).
+
+#### Usage
+
+Running a task in a thread (will obtain a thread from pool specified in `config.yml`)
+```java
+Kaizen.getThreadPool().getThreadPoolExecutor().submit(new Runnable() {
+    @Override
+    public void run() {
+
+    }
+});
+```
+
+Run a query to get (name, age) from `exampleTable` where `age` is greater than `18` in a separate thread (can also use counterpart `executePreparedStatement` to run in current thread - if needed)
+    
+Returns: 
+```java 
+List<HashMap<String, Object>>
+```
+
+```java
+Kaizen.getDatabase().executePreparedStatementAsync(
+    "SELECT name, age FROM exampleTable WHERE name = ? AND age > ?;", 
+    Arrays.asList("John Doe", "18"));
+```

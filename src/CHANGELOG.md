@@ -5,10 +5,27 @@ All notable changes to this project will be documented in this file. This includ
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.1.2] - 2023-03-03 - 2023-03-06
+### Added
+- Docs:
+  - Added new [Economy](mech/economy.md) related pages:
+    - [Banking](mech/economy/banking.md)
+
+### Changed
+- Docs:
+  - Restructuring of certain sections:
+    - NPC
+    - Nodes
+  - Renamed `PlayerStats` -> [Datum](core/datum.md)
+
+### Fixed
+- Docs:
+  - Fixed incorrect page being displayed for [PlayerStats](core/playerstats.md)
+
 ## [v2.1.1] - 2023-1-24 - 2023-02-27
 
 ### Added
-- Docs
+- Docs:
   - ~~Began writing of the project overview~~. (DONE!)
   - Added various economy related pages.
   - Begun implementation of page tags such as "Unimplemented", "Implemented" and "Currently being developed".

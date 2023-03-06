@@ -26,7 +26,7 @@ In Towny, wars are either too fast (the flag-war system, the attrition system wh
 
 The bright side of Towny is that it's constantly being updated by competent developers, and those developers are also very helpful when it comes to adding new features using their API and will sometimes even lend a hand in development.
 
-I believe that Towny is a good base for our new hybrid claims system on this basis. Not to mention, it already has the basic object hierarchy structure that we can work off of. I believe [phonon's nodes](https://github.com/crusalis/multi-nodes) would not be an acceptable base for our fork as it is way too barebones compared to Towny and removes necessary features that we can use to expand off of, such as the different ``plot-types`` built in the Towny API. Not to mention that the source for phonon's nodes is written in Kotlin which will make collaboration significantly harder as it's currently not a widely accepted language standard for plugin development. 
+I believe that Towny is a good base for our new hybrid claims system on this basis. Not to mention, it already has the basic object hierarchy structure that we can work off of. I believe [phonon's nodes](https://github.com/crusalis/multi-nodes) would not be an acceptable base for our fork as it is way too bare bones compared to Towny and removes necessary features that we can use to expand off of, such as the different ``plot-types`` built in the Towny API. Not to mention that the source for phonon's nodes is written in Kotlin which will make collaboration significantly harder as it's currently not a widely accepted language standard for plugin development. 
 
 ## Why the fork is necessary:
 
@@ -38,3 +38,17 @@ Forking Towny is necessary as it plans to offer better implementation of certain
 - Direct integration for proposed [NPC](npc.md) mechanics such as: 
   - Spawning of [soldiers](npcs/types/soldier.md).
   - Implementation of proposed mechanics of NPC nations.
+- Better [permissions](nations/permissions.md) system
+
+## Concept Overview
+The proposed nations system aims to be as dynamic as possible and gives the player as much freedom as possible when structuring their claims. Since the project aims to be a geopol, a proper, well made nations system is crucial for the project to succeed. As stated above, this system aims to integrate directly with the NPCs as a way to implement NPC specific event triggering and a sort of "diplomacy algorithm" to handle inter-player and non-player interactions.   
+
+Land claiming is just the basics of the nation system but the real magic lies in its object structure and unique permission based land management. With the permissions system, roles such as Governor, Treasurer, General, etc. will no longer just be "roleplay" but actually coded into the game.   
+
+Introduction of the plot system is not a new concept as it was done in Towny where nations/towns can set certain chunks as a different plot-type, each with their own special attributes. One such example is a jail plot that supposeduly would allow for the imprisonment of rival players. This feature was buggy and the towny method for implementing plots wasn't very straightforward and was barely beneficial for the casual player.   
+
+This new system attempts to fix that by tying plot-types to other plugins such as perhaps a factory plot that can tie into Movecraft or a [bank plot that ties into the economy](../economy/banking.md). The plot-type system adds a way for other plugins to hook directly into our nation system by allowing for unique event triggers and more intuitive location-based event firing. 
+
+> See [Objects](nations/objects.md) and [Permissions](nations/permissions.md)
+    
+### Warfare

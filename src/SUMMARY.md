@@ -14,17 +14,15 @@
     - [HiddenOre](mech/economy/resources/hiddenore.md)
   - [API](mech/economy/API.md)
     - [Class Hierarchy](mech/economy/api/hierarchy.md)
+    <!-- - [TaxedTransaction](mech/economy/api/taxedtransaction.md) -->
 
 - [NPCs](mech/npc.md)
   - [Types]()
-    - [Characters](mech/npcs/types/characters.md)
-    - [Soldiers](mech/npcs/types/soldier.md)
-    - [Merchants](mech/npcs/types/merchants.md)
-    - [Builder](mech/npcs/types/builder.md)
 
 - [Combat](mech/combat.md)
   - [Movecraft](mech/combat/movecraft.md)
-  - [Weapons](mech/combat/weapons.md)
+  - [DamageListener](mech/combat/damagelistener.md)
+  - [Artifacts](mech/combat/weapons.md)
 
 - [Skills](mech/skills.md)
 
@@ -38,7 +36,9 @@
 - [Nodes](mech/nodes.md)
   - [Territories](mech/nodes/territories.md)
   - [Prefer Handles over IDs](mech/nodes/handles-over-ids.md)
-  - [Claiming System](mech/nodes/nation-system.md)
+  - [Nation System](mech/nodes/nation-system.md)
+    - [Objects](mech/nodes/nations/objects.md)
+    - [Permissions](mech/nodes/nations/permissions.md)
   - [NPC Integration](mech/nodes/npc-integration.md)
   
 - [Quests](mech/quests.md)
@@ -50,7 +50,7 @@
 
 # Core
 - [ACCommonLib](core/common-lib.md)
-- [PlayerStats](core/playerstats.md)
+- [Datum](core/datum.md)
 
 # General Development
 - [Housekeeping](administration/housekeeping.md)
