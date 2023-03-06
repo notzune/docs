@@ -3,7 +3,7 @@
 Documentation of the mechanics and vision of the server.
 ---
 
-> 📝 **Info:** This document was last updated on 2023-02-27
+> 📝 **Info:** This document was last updated on 2023-03-06
 > 
 > ⚠️ **Warning:** All information should be treated as current unless specifically told otherwise.
 >
