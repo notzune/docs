@@ -12,3 +12,9 @@ There are various economy APIs already on the market such as Vault and, recently
 
 [Treasury](https://github.com/ArcanePlugins/Treasury/wiki/About-Treasury) is a more recent API that hit the market at the start of 2022 and is (at the time of writing this page) currently going through a massive rewrite that has resulted in it being mostly unusable in its current state. However, it addresses a lot of the issues with Vault that were listed above. Our API is modeled heavily after Treasury which is reflected in the proposed [hierarchy](api/hierarchy.md).    
 
+[Gringotts](https://github.com/nikosgram/gringotts), although not marketted as a standalone Economy API, does have functionality to act as one. It is the first (and iirc only) publically available plugin to use the concept of physical items translated into currency. We can use their repository as reference when building our system as their system is proven to work.   
+
+[HyperConomy](https://github.com/coleweinman/HyperConomyX) is the last plugin on this list that provides a decent API and infact already had a way of creating per-region markets as well as dynamic price changing. Our system is modeled similar to theirs in that aspect but HyperConomy suffered from countless bugs, was abandoned by its developers, and wasn't very user or server operator friendly. That being said, the concept was great and we can learn a lot from them and their shortcomings. You can consider our `Market` system as an upgraded, more refined version of `HyperConomy`.    
+
+## Integration
+The main benefit of creating an Economy API from scratch is complete control over what goes into it. The goal of the API is to integrate seamlessly with projects such as [`Nodes`](../nodes.md) for example.   
