@@ -44,35 +44,35 @@ As the stock approaches 0, the price will approach infinity, and as the stock ap
 ## Taxation
 This economic system will allow for different forms of taxation. Taxes, by default, are deposited into the region's bank account unless an eligible bank account is found. 
 ```
-         ┌───────────────┐
-         │Collected Taxes│
-         └──────┬────────┘
-                │
-                │
-                │
-                ▼
-      ┌──────────────────────┐
-      │                      │
-      │ Available town bank? │
-      │                      │
-      └─────────┬────────────┘
-                │
-                │
-                ▼
-     ┌────────────────────────┐
-     │                        │
-     │ Available nation bank? │
-     │                        │
-     └──────────┬─────────────┘
-                │
-                │
-                │
-                ▼
-      ┌──────────────────────┐
-      │                      │
-      │  Region bank account │
-      │                      │
-      └──────────────────────┘
+                  ┌───────────────┐
+                  │Collected Taxes│
+                  └──────┬────────┘
+                         │
+                         │
+                         │
+                         ▼
+                  ┌──────────────────────┐
+                  │                      │
+                  │ Available town bank? │
+                  │                      │
+                  └─────────┬────────────┘
+                            │
+                            │
+                            ▼
+                  ┌────────────────────────┐
+                  │                        │
+                  │ Available nation bank? │
+                  │                        │
+                  └──────────┬─────────────┘
+                             │
+                             │
+                             │
+                             ▼
+                  ┌──────────────────────┐
+                  │                      │
+                  │  Region bank account │
+                  │                      │
+                  └──────────────────────┘
 ```
 
 > 📝 **Note:** Here is a chart showing the priority hierarchy of where the taxes are deposited.    
@@ -93,4 +93,26 @@ Enchantment tax is applied when enchantments are purchased. Enchantment tax will
 
 It allows poor players to make more money during sales than rich players. Dynamic tax will only be applied when the player's balance is between the money-floor and the money-cap defined in config.yml. The maximum tax rate defined in config.yml will be applied when the player's balance is equal to or greater than the money-cap. If the max tax is set to 100 percent the player will no longer make money when selling items to a server shop. At the money floor, no tax will be applied. Between the cap and floor, the tax rate will gradually increase as the player's balance approaches the money cap.
 
-> See also [banking](banking.md), and the [nation system](../nodes/nation-system.md)
+> See also [Banking](banking.md), and the [Nation System](../nodes/nation-system.md)
+    
+#### Taxed Transaction
+```java
+public interface TaxedTransaction extends EconomyTransaction {
+
+    /**
+     * Add a tax collector to this taxed transaction. The tax collector account receives the taxes from this
+     * transaction.
+     *
+     * @param taxCollector account to receive the taxes.
+     * @return taxed transaction with tax collector
+     */
+    TaxedTransaction setCollectedBy(Account taxCollector);
+
+    /**
+     * Return the amount of taxes to be paid in this transaction.
+     *
+     * @return the amount of taxes to be paid in this transaction.
+     */
+    double getTax();
+}
+```
