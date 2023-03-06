@@ -11,6 +11,7 @@
   - tk.airshipcraft.market.api.economy.events.PlayerAccountTransactionEvent
 - tk.airshipcraft.market.api.common.event.Completion
 - tk.airshipcraft.market.api.economy.transaction.EconomyTransaction
+- tk.airshipcraft.market.api.economy.transaction.TaxedTransaction (extends tk.airshipcraft.market.api.economy.transaction.EconomyTransaction)
 - tk.airshipcraft.market.api.economy.transaction.EconomyTransaction.Builder
 - tk.airshipcraft.market.api.common.event.EventBus.EventSubscriberBuilder<T>
 - tk.airshipcraft.market.api.common.event.EventSubscriber<T> (implements java.lang.Comparable<T>)
