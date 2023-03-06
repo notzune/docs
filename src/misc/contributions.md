@@ -10,7 +10,10 @@ This page contains a list of all of the kind and amazing people who have contrib
 [DigitalGuardian](https://builtbybit.com/members/digitalguardian.421303/#about)
 [Locutusque](https://github.com/AirshipCraft/CombatMechanics)    
 [SupremeNoob](https://github.com/AirshipCraft/ArtifactItems)    
-[Bmbay10](https://github.com/Bmbay10)
+[Bmbay10](https://github.com/Bmbay10)    
+[donpsabance](https://github.com/donpsabance)
+[MichaelH](https://github.com/TryLovingMichael)
+
 
 ### Discord:
 [**InspectorPacket**](https://github.com/inspector-packet)
