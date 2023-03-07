@@ -22,7 +22,7 @@
 - [Combat](mech/combat.md)
   - [Movecraft](mech/combat/movecraft.md)
   - [Damage Types](mech/combat/damagetypes.md)
-  - [Artifacts](mech/combat/weapons.md)
+  - [Artifacts](mech/combat/artifact-list.md)
 
 - [Skills](mech/skills.md)
 
