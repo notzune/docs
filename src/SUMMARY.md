@@ -21,8 +21,9 @@
 
 - [Combat](mech/combat.md)
   - [Movecraft](mech/combat/movecraft.md)
-  - [DamageListener](mech/combat/damagelistener.md)
-  - [Artifacts](mech/combat/weapons.md)
+  - [Damage Types](mech/combat/damagetypes.md)
+  - [Artifacts](mech/combat/artifacts.md)
+    - [List of Artifacts](mech/combat/artifact-list.md)
 
 - [Skills](mech/skills.md)
 
